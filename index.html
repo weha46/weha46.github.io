@@ -40,7 +40,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-white w-screen">
+  <body class="bg-black w-screen text-base font-normal">
     <header class="w-full h-[108px] bg-white flex items-center justify-center">
       <nav
         class="w-[1360px] h-[60px] bg-white flex items-center justify-center gap-8"
@@ -52,39 +52,43 @@
             alt=""
           />
         </div>
-        <ul class="flex gap-6">
-          <li>Home</li>
-          <li>About</li>
-          <li>Product</li>
-          <li>Project</li>
-          <li>News</li>
-          <li>Contact</li>
+        <ul class="flex gap-6 text-base font-medium">
+          <li class="cursor-pointer">Home</li>
+          <li class="cursor-pointer">About</li>
+          <li class="cursor-pointer">Product</li>
+          <li class="cursor-pointer">Project</li>
+          <li class="cursor-pointer">News</li>
+          <li class="cursor-pointer">Contact</li>
         </ul>
         <div class="flex items-center justify-center gap-4">
           <span
-            class="material-symbols-outlined p-2 bg-white text-black rounded-full"
+            class="material-symbols-outlined text-base font-medium cursor-pointer p-2 bg-white text-black rounded-full"
           >
             search
           </span>
           <div
-            class="px-2 py-2 border border-black rounded flex items-center justify-center gap-4"
+            class="px-2 py-2 text-base font-medium cursor-pointer border border-black rounded flex items-center justify-center gap-4"
           >
             En
             <span class="material-symbols-outlined"> keyboard_arrow_down </span>
           </div>
           <span
-            class="material-symbols-outlined p-2 bg-black text-white rounded-full"
+            class="material-symbols-outlined cursor-pointer p-2 bg-black text-white rounded-full"
           >
             light_mode
           </span>
-          <div class="px-4 py-2 border border-black rounded">Get a Quote</div>
+          <div
+            class="px-4 py-2 border text-base font-medium cursor-pointer border-black rounded"
+          >
+            Get a Quote
+          </div>
         </div>
       </nav>
     </header>
 
     <div class="slider w-full overflow-hidden h-[780px] relative flex">
       <div
-        class="slide min-w-full transition-transform duration-500 ease-in-out h-full flex items-center justify-center overflow-hidden"
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-1.jpg"
@@ -107,7 +111,7 @@
       </div>
 
       <div
-        class="slide min-w-full transition-transform duration-500 ease-in-out h-full flex items-center justify-center overflow-hidden"
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-2.jpg"
@@ -130,7 +134,7 @@
       </div>
 
       <div
-        class="slide min-w-full transition-transform duration-500 ease-in-out h-full flex items-center justify-center overflow-hidden"
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-3.jpg"
@@ -153,10 +157,56 @@
       </div>
 
       <div
-        class="slide min-w-full transition-transform duration-500 ease-in-out h-full flex items-center justify-center overflow-hidden"
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-4.jpg"
+          class="w-full h-full brightness-50"
+          alt=""
+        />
+        <div class="absolute text-left text-white p-48">
+          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <p class="mt-4 text-lg md:text-2xl">
+            Inalix offers wide range of solutions for all of your airport system
+            needs. Our track records can prove our worthy. We develop our own
+            custom system for airport from Flight Information Display System
+            (FIDS), Billing system, to Airport Operation Data Base (AODB).
+            Either Landside or Airside, Inalix has the solutions.
+          </p>
+          <div class="mt-4 border border-red-600 rounded p-2 w-fit">
+            Learn More
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+      >
+        <img
+          src="/public/images/slide-5.jpg"
+          class="w-full h-full brightness-50"
+          alt=""
+        />
+        <div class="absolute text-left text-white p-48">
+          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <p class="mt-4 text-lg md:text-2xl">
+            Inalix offers wide range of solutions for all of your airport system
+            needs. Our track records can prove our worthy. We develop our own
+            custom system for airport from Flight Information Display System
+            (FIDS), Billing system, to Airport Operation Data Base (AODB).
+            Either Landside or Airside, Inalix has the solutions.
+          </p>
+          <div class="mt-4 border border-red-600 rounded p-2 w-fit">
+            Learn More
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+      >
+        <img
+          src="/public/images/slide-6.jpg"
           class="w-full h-full brightness-50"
           alt=""
         />
@@ -193,17 +243,6 @@
           </span>
         </button>
       </div>
-
-      <span
-        class="absolute left-4 hidden items-center justify-center material-symbols-outlined p-4 bg-gray-500/50 text-white rounded-full"
-      >
-        arrow_back_ios
-      </span>
-      <span
-        class="absolute right-4 hidden items-center justify-center material-symbols-outlined p-4 bg-gray-500/50 text-white rounded-full"
-      >
-        arrow_forward_ios
-      </span>
     </div>
     <div class="w-full h-[780px] overflow-hidden bg-cover">
       <img
