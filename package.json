@@ -4,6 +4,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch"
   }
 }
