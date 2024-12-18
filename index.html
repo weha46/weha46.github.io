@@ -83,9 +83,10 @@
       </nav>
     </header>
 
-    <div class="slider w-full overflow-hidden h-[780px] relative flex">
+    <div id="slider" class="w-full overflow-hidden h-[780px] relative">
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-1"
+        class="slide-1 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-1.jpg"
@@ -93,7 +94,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 1</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -108,7 +109,8 @@
       </div>
 
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-2"
+        class="slide-2 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-2.jpg"
@@ -116,7 +118,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 2</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -131,7 +133,8 @@
       </div>
 
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-3"
+        class="slide-3 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-3.jpg"
@@ -139,7 +142,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 3</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -154,7 +157,8 @@
       </div>
 
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-4"
+        class="slide-4 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-4.jpg"
@@ -162,7 +166,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 4</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -177,7 +181,8 @@
       </div>
 
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-5"
+        class="slide-5 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-5.jpg"
@@ -185,7 +190,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 5</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -200,7 +205,8 @@
       </div>
 
       <div
-        class="slide flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        id="slide-6"
+        class="slide-6 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-6.jpg"
@@ -208,7 +214,7 @@
           alt=""
         />
         <div class="absolute text-left text-white p-48">
-          <h1 class="text-4xl font-bold">Airport Solutions</h1>
+          <h1 class="text-4xl font-bold">Airport Solutions 6</h1>
           <p class="mt-4 text-lg md:text-2xl">
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
@@ -223,7 +229,7 @@
       </div>
 
       <div
-        class="slider-nav px-8 absolute top-1/2 w-full flex justify-between -translate-y-1/2"
+        class="slider-nav hidden px-8 absolute top-1/2 w-full justify-between -translate-y-1/2"
       >
         <button class="focus:outline-none cursor-pointer" id="prev">
           <span
@@ -250,6 +256,78 @@
     </div>
 
     <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = [
+          document.getElementById("slide-1"),
+          document.getElementById("slide-2"),
+          document.getElementById("slide-3"),
+          document.getElementById("slide-4"),
+          document.getElementById("slide-5"),
+          document.getElementById("slide-6"),
+        ];
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+          slides[index].classList.remove("translate-x-full");
+          slides[index].classList.add("translate-x-0", "z-10");
+
+          setTimeout(() => {
+            slides[index].classList.remove("translate-x-0", "z-10");
+            slides[index].classList.add("translate-x-full");
+
+            // Increment index and loop back to 0 if it exceeds the array length
+            currentIndex = (index + 1) % slides.length;
+            showSlide(currentIndex);
+          }, 2000); // Duration each slide is displayed
+        }
+
+        // Start the slider
+        showSlide(currentIndex);
+      });
+    </script>
+
+    <!-- <script>
+      const slides = document.querySelectorAll(".slide");
+      let currentIndex = 0;
+
+      function updateSlides() {
+        // Reset all slides
+        slides.forEach((slide, index) => {
+          if (index === currentIndex) {
+            slide.classList.remove("translate-x-full", "-translate-x-full");
+            slide.classList.add("translate-x-0, z-10");
+          } else if (
+            index ===
+            (currentIndex - 1 + slides.length) % slides.length
+          ) {
+            slide.classList.remove("translate-x-0, z-10");
+            slide.classList.add("-translate-x-full");
+          } else {
+            slide.classList.remove("translate-x-0, z-10", "-translate-x-full");
+            slide.classList.add("translate-x-full");
+          }
+        });
+      }
+
+      function showNextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlides();
+      }
+
+      // Initialize slides
+      updateSlides();
+
+      // Change slides every 0.5 seconds
+      setInterval(showNextSlide, 1000);
+    </script>
+    <style>
+      /* Tambahan untuk menghindari flickering */
+      #slider {
+        perspective: 1000px;
+      }
+    </style>-->
+    <!--  <script>
       const slides = document.querySelectorAll(".slide");
       let currentIndex = 0;
       let autoPlayInterval;
@@ -288,6 +366,6 @@
 
       updateSlider();
       startAutoPlay();
-    </script>
+    </script>-->
   </body>
 </html>
