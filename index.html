@@ -38,18 +38,21 @@
   </head>
   <link rel="stylesheet" href="/style.css" />
   <body class="bg-black w-screen text-base font-normal">
-    <header class="w-full h-[108px] bg-white flex items-center justify-center">
+    <header
+      class="w-full h-16 lg:h-[108px] bg-white flex items-center justify-center"
+    >
       <nav
-        class="w-[1360px] h-[60px] bg-white flex items-center justify-center gap-8"
+        class="w-full px-4 lg:px-0 h-full lg:h-[60px] flex items-center justify-between lg:justify-center gap-0 lg:gap-8"
       >
-        <div class="h-[60px] bg-cover">
+        <div class="h-6 lg:h-[60px] flex items-center justify-center bg-cover">
           <img
             src="/public/images/logo_inalix_default_200.png"
-            class="h-[60px] object-cover"
+            class="h-full object-cover"
             alt=""
           />
         </div>
-        <ul class="flex gap-6 text-base font-medium">
+
+        <ul class="hidden lg:flex gap-6 text-base font-medium">
           <li class="cursor-pointer">Home</li>
           <li class="cursor-pointer">About</li>
           <li class="cursor-pointer">Product</li>
@@ -57,25 +60,30 @@
           <li class="cursor-pointer">News</li>
           <li class="cursor-pointer">Contact</li>
         </ul>
-        <div class="flex items-center justify-center gap-4">
+        <div class="flex items-center justify-center gap-0 lg:gap-4">
           <span
-            class="material-symbols-outlined text-base font-medium cursor-pointer p-2 bg-white text-black rounded-full"
+            class="material-symbols-outlined flex lg:hidden cursor-pointer p-2 bg-white text-black rounded-full"
+          >
+            menu
+          </span>
+          <span
+            class="material-symbols-outlined hidden lg:flex cursor-pointer p-2 bg-white text-black rounded-full"
           >
             search
           </span>
           <div
-            class="px-2 py-2 text-base font-medium cursor-pointer border border-black rounded flex items-center justify-center gap-4"
+            class="px-2 py-2 text-base font-medium hidden lg:flex cursor-pointer border border-black rounded items-center justify-center gap-4"
           >
             En
             <span class="material-symbols-outlined"> keyboard_arrow_down </span>
           </div>
           <span
-            class="material-symbols-outlined cursor-pointer p-2 bg-black text-white rounded-full"
+            class="material-symbols-outlined hidden lg:flex cursor-pointer p-2 bg-black text-white rounded-full"
           >
             light_mode
           </span>
           <div
-            class="px-4 py-2 border text-base font-medium cursor-pointer border-black rounded"
+            class="px-4 py-2 hidden lg:flex border text-base font-medium cursor-pointer border-black rounded"
           >
             Get a Quote
           </div>
@@ -83,7 +91,7 @@
       </nav>
     </header>
 
-    <div id="slider" class="w-full overflow-hidden h-[780px] relative">
+    <div id="slider" class="w-full overflow-hidden h-96 lg:h-[780px] relative">
       <div
         id="slide-1"
         class="slide-1 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
@@ -93,9 +101,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 1</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 1</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -117,9 +127,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 2</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 2</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -141,9 +153,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 3</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 3</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -165,9 +179,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 4</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 4</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -189,9 +205,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 5</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 5</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -213,9 +231,11 @@
           class="w-full h-full brightness-50"
           alt=""
         />
-        <div class="absolute text-left text-white pl-48 w-[100%]">
-          <h1 class="text-4xl font-bold">Airport Solutions 6</h1>
-          <p class="mt-4 text-lg md:text-2xl w-1/2">
+        <div class="absolute text-left text-white px-8 lg:pl-48 h-fit w-full">
+          <h1 class="text-2xl lg:text-4xl font-bold">Airport Solutions 6</h1>
+          <p
+            class="mt-4 h-24 overflow-hidden text-ellipsis whitespace-normal lg:h-fit lg:overflow-visible text-base lg:text-2xl w-full lg:w-1/2"
+          >
             Inalix offers wide range of solutions for all of your airport system
             needs. Our track records can prove our worthy. We develop our own
             custom system for airport from Flight Information Display System
@@ -227,73 +247,68 @@
           </div>
         </div>
       </div>
-
-      <div
-        class="slider-nav hidden px-8 absolute top-1/2 w-full justify-between -translate-y-1/2"
-      >
-        <button class="focus:outline-none cursor-pointer" id="prev">
-          <span
-            class="flex items-center justify-center material-symbols-outlined p-4 bg-gray-500/50 text-white rounded-full"
-          >
-            arrow_back_ios
-          </span>
-        </button>
-        <button class="focus:outline-none cursor-pointer" id="next">
-          <span
-            class="flex items-center justify-center material-symbols-outlined p-4 bg-gray-500/50 text-white rounded-full"
-          >
-            arrow_forward_ios
-          </span>
-        </button>
-      </div>
     </div>
     <div
-      class="w-full bg-white flex gap-10 p-12 h-[780px] items-center justify-between overflow-hidden bg-cover"
+      class="w-full bg-white flex flex-col lg:flex-row gap-10 p-4 lg:p-12 h-fit lg:h-[780px] items-center justify-between overflow-hidden bg-cover"
     >
-      <div class="w-1/2 h-auto bg-cover">
+      <div class="w-full lg:w-1/2 h-auto bg-cover">
         <img
           src="/public/images/Section.png"
           class="h-full w-full object-cover"
           alt=""
         />
       </div>
-      <div class="w-1/2 h-auto flex flex-col gap-4">
-        <h1 class="text-4xl font-bold">Why Choose Us?</h1>
-        <div class="flex gap-4">
-          <div class="flex flex-col w-1/2">
+      <div
+        class="w-full lg:w-1/2 h-auto text-center lg:text-left flex flex-col gap-4"
+      >
+        <h1 class="text-2xl lg:text-4xl font-bold">Why Choose Us?</h1>
+        <div class="flex flex-col lg:flex-row gap-4">
+          <div
+            class="flex flex-col items-center lg:items-start w-full lg:w-1/2"
+          >
             <div class="w-8 h-8 p-1 flex items-center justify-center">
               <span class="material-symbols-outlined text-4xl text-[#FF0001]">
                 dns
               </span>
             </div>
-            <h2 class="text-3xl mt-4 font-bold">Robust & Reliable System</h2>
+            <h2 class="text-xl lg:text-3xl mt-4 font-bold">
+              Robust & Reliable System
+            </h2>
             <p class="mt-2 text-[#6B7280]">
               Our comprehensive system design makes sure that our system able to
               operate and function in a reliable 24 hours, 7 days a week, all
               year long
             </p>
           </div>
-          <div class="flex flex-col w-1/2">
+          <div
+            class="flex flex-col items-center lg:items-start w-full lg:w-1/2"
+          >
             <div class="w-8 h-8 p-1 flex items-center justify-center">
               <span class="material-symbols-outlined text-4xl text-[#FF0001]">
                 group
               </span>
             </div>
-            <h2 class="text-3xl mt-4 font-bold">Fast Technical Support</h2>
+            <h2 class="text-xl lg:text-3xl mt-4 font-bold">
+              Fast Technical Support
+            </h2>
             <p class="mt-2 text-[#6B7280]">
               Our office based in Jakarta – Indonesia and we have great support
               team that will help you.
             </p>
           </div>
         </div>
-        <div class="flex gap-4">
-          <div class="flex flex-col w-1/2">
+        <div class="flex flex-col lg:flex-row gap-4">
+          <div
+            class="flex flex-col items-center lg:items-start w-full lg:w-1/2"
+          >
             <div class="w-8 h-8 p-1 flex items-center justify-center">
               <span class="material-symbols-outlined text-4xl text-[#FF0001]">
                 star
               </span>
             </div>
-            <h2 class="text-3xl mt-4 font-bold">20+ Years Experience</h2>
+            <h2 class="text-xl lg:text-3xl mt-4 font-bold">
+              20+ Years Experience
+            </h2>
             <p class="mt-2 text-[#6B7280]">
               Our company was established in 2001, that means we have 20+ years
               experience in this business field. There is lots of valuable
@@ -301,13 +316,15 @@
               project.
             </p>
           </div>
-          <div class="flex flex-col w-1/2">
+          <div
+            class="flex flex-col items-center lg:items-start w-full lg:w-1/2"
+          >
             <div class="w-8 h-8 p-1 flex items-center justify-center">
               <span class="material-symbols-outlined text-4xl text-[#FF0001]">
                 globe
               </span>
             </div>
-            <h2 class="text-3xl mt-4 font-bold">
+            <h2 class="text-xl lg:text-3xl mt-4 font-bold">
               Professional & Solid Teamwork
             </h2>
             <p class="mt-2 text-[#6B7280]">
