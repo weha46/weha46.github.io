@@ -668,10 +668,6 @@ video {
   width: 100vw;
 }
 
-.w-\[55\%\] {
-  width: 55%;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -745,6 +741,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .overflow-hidden {
@@ -993,8 +993,16 @@ video {
     width: 70%;
   }
 
+  .lg\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .lg\:w-\[85\%\] {
     width: 85%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
   }
 
   .lg\:flex-row {
