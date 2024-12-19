@@ -336,7 +336,7 @@
     </div>
 
     <div
-      class="w-full lg:w-[80%] bg-white m-auto flex flex-col gap-10 p-2 lg:p-4 h-fit lg:h-[780px] items-center justify-center overflow-hidden bg-cover"
+      class="w-full lg:w-[80%] m-auto flex flex-col gap-10 px-2 lg:px-4 py-4 mt-10 h-fit items-center justify-center overflow-hidden bg-cover"
     >
       <div class="flex flex-col items-center gap-2">
         <h4 class="uppercase text-[#D94645] text-base">Our recent work</h4>
@@ -409,7 +409,7 @@
     </div>
 
     <div
-      class="w-full lg:w-[80%] m-auto flex flex-col lg:flex-row gap-16 p-2 lg:p-4 h-fit items-start justify-center overflow-hidden bg-cover"
+      class="w-full lg:w-[80%] m-auto flex flex-col lg:flex-row gap-16 px-2 lg:px-4 py-4 mt-10 h-fit items-start justify-center overflow-hidden bg-cover"
     >
       <div class="flex flex-col items-start gap-10 w-[60%]">
         <div class="flex flex-col items-start gap-2">
@@ -426,7 +426,7 @@
             class="object-cover w-1/2"
             alt=""
           /><img
-            src="/public/images/benefits-one-1.jpg.png"
+            src="/public/images/benefits-one-2.jpg.png"
             class="object-cover w-1/2"
             alt=""
           />
@@ -491,38 +491,59 @@
       </div>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const slides = [
-          document.getElementById("slide-1"),
-          document.getElementById("slide-2"),
-          document.getElementById("slide-3"),
-          document.getElementById("slide-4"),
-          document.getElementById("slide-5"),
-          document.getElementById("slide-6"),
-        ];
+    <div
+      class="w-full lg:w-[80%] bg-[#191825] m-auto flex flex-row gap-10 px-2 lg:px-4 py-14 mt-10 h-fit items-center justify-center overflow-hidden bg-cover"
+    >
+      <h3 class="w-64 text-2xl text-white">
+        Get your <span class="text-[#D94645]">FREE</span> business consultation
+      </h3>
+      <div class="h-px w-16 bg-gray-300"></div>
 
-        let currentIndex = 0;
+      <span
+        class="material-symbols-outlined text-white !text-5xl w-24 h-24 text-center content-center bg-[#D94645] rounded-full"
+      >
+        perm_phone_msg
+      </span>
 
-        function showSlide(index) {
-          slides[index].classList.remove("translate-x-full");
-          slides[index].classList.add("translate-x-0", "z-10");
+      <div class="h-px w-16 bg-gray-300"></div>
+      <div>
+        <h3 class="text-2xl text-white">+62-21-808 788 17</h3>
+        <h4 class="text-[#D94645]">sales@inalix.com</h4>
+      </div>
+    </div>
+    <footer>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const slides = [
+            document.getElementById("slide-1"),
+            document.getElementById("slide-2"),
+            document.getElementById("slide-3"),
+            document.getElementById("slide-4"),
+            document.getElementById("slide-5"),
+            document.getElementById("slide-6"),
+          ];
 
-          setTimeout(() => {
-            slides[index].classList.remove("translate-x-0", "z-10");
-            slides[index].classList.add("translate-x-full");
+          let currentIndex = 0;
 
-            // Increment index and loop back to 0 if it exceeds the array length
-            currentIndex = (index + 1) % slides.length;
-            showSlide(currentIndex);
-          }, 4000); // Duration each slide is displayed
-        }
+          function showSlide(index) {
+            slides[index].classList.remove("translate-x-full");
+            slides[index].classList.add("translate-x-0", "z-10");
 
-        // Start the slider
-        showSlide(currentIndex);
-      });
-    </script>
+            setTimeout(() => {
+              slides[index].classList.remove("translate-x-0", "z-10");
+              slides[index].classList.add("translate-x-full");
 
+              // Increment index and loop back to 0 if it exceeds the array length
+              currentIndex = (index + 1) % slides.length;
+              showSlide(currentIndex);
+            }, 4000); // Duration each slide is displayed
+          }
+
+          // Start the slider
+          showSlide(currentIndex);
+        });
+      </script>
+    </footer>
     <!-- <script>
       const slides = document.querySelectorAll(".slide");
       let currentIndex = 0;
