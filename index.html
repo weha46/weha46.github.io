@@ -90,7 +90,10 @@
       </nav>
     </header>
 
-    <div id="slider" class="w-full overflow-hidden h-96 lg:h-[780px] relative">
+    <div
+      id="slider"
+      class="w-full overflow-hidden h-96 lg:h-[780px] bg-black relative"
+    >
       <div
         id="slide-1"
         class="slide-1 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
@@ -562,6 +565,50 @@
           let currentIndex = 0;
 
           function showSlide(index) {
+            // Slide yang akan muncul di posisi 0
+            slides[index].classList.remove(
+              "translate-x-full",
+              "-translate-x-full"
+            );
+            slides[index].classList.remove("-z-10");
+            slides[index].classList.add("translate-x-0", "z-10");
+
+            // Slide sebelumnya bergerak ke kiri (-translate-x-full)
+            const previousIndex = (index - 1 + slides.length) % slides.length;
+            slides[previousIndex].classList.remove("translate-x-0", "z-10");
+            slides[previousIndex].classList.add("-translate-x-full");
+
+            // Slide berikutnya bergerak masuk dari kanan (translate-x-full)
+            const nextIndex = (index + 1) % slides.length;
+            slides[nextIndex].classList.remove("-translate-x-full");
+            slides[nextIndex].classList.add("translate-x-full", "-z-10");
+
+            // Jadwalkan transisi ke slide berikutnya
+            setTimeout(() => {
+              currentIndex = nextIndex;
+              showSlide(currentIndex);
+            }, 4000); // Durasi setiap slide
+          }
+
+          // Memulai slider
+          showSlide(currentIndex);
+        });
+      </script>
+      <!--  
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const slides = [
+            document.getElementById("slide-1"),
+            document.getElementById("slide-2"),
+            document.getElementById("slide-3"),
+            document.getElementById("slide-4"),
+            document.getElementById("slide-5"),
+            document.getElementById("slide-6"),
+          ];
+
+          let currentIndex = 0;
+
+          function showSlide(index) {
             slides[index].classList.remove("translate-x-full");
             slides[index].classList.add("translate-x-0", "z-10");
 
@@ -578,7 +625,7 @@
           // Start the slider
           showSlide(currentIndex);
         });
-      </script>
+      </script>-->
     </footer>
     <!-- <script>
       const slides = document.querySelectorAll(".slide");
