@@ -98,7 +98,7 @@
     >
       <div
         id="slide-1"
-        class="slide-1 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-1 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-1.jpg"
@@ -124,7 +124,7 @@
 
       <div
         id="slide-2"
-        class="slide-2 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-2 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-2.jpg"
@@ -150,7 +150,7 @@
 
       <div
         id="slide-3"
-        class="slide-3 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-3 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-3.jpg"
@@ -176,7 +176,7 @@
 
       <div
         id="slide-4"
-        class="slide-4 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-4 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-4.jpg"
@@ -202,7 +202,7 @@
 
       <div
         id="slide-5"
-        class="slide-5 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-5 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-5.jpg"
@@ -228,7 +228,7 @@
 
       <div
         id="slide-6"
-        class="slide-6 absolute translate-x-full flex min-w-full transition-transform duration-500 ease-in-out h-full items-center justify-center overflow-hidden"
+        class="slide-6 absolute translate-x-full flex min-w-full transition-all transform duration-1000 ease-in delay-500 h-full items-center justify-center overflow-hidden"
       >
         <img
           src="/public/images/slide-6.jpg"
@@ -722,81 +722,7 @@
       <p class="text-center text-[#444444] mt-4 lg:mt-10">
         Inalix - All Right Reserved
       </p>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const slides = [
-            document.getElementById("slide-1"),
-            document.getElementById("slide-2"),
-            document.getElementById("slide-3"),
-            document.getElementById("slide-4"),
-            document.getElementById("slide-5"),
-            document.getElementById("slide-6"),
-          ];
-
-          let currentIndex = 0;
-
-          function showSlide(index) {
-            // Slide yang akan muncul di posisi 0
-            slides[index].classList.remove(
-              "translate-x-full",
-              "-translate-x-full"
-            );
-            slides[index].classList.remove("-z-10", "opacity-0");
-            slides[index].classList.add("translate-x-0", "z-10", "opacity-100");
-
-            // Slide sebelumnya bergerak ke kiri (-translate-x-full)
-            const previousIndex = (index - 1 + slides.length) % slides.length;
-            slides[previousIndex].classList.remove(
-              "translate-x-0",
-              "z-10",
-              "opacity-100"
-            );
-            slides[previousIndex].classList.add(
-              "-translate-x-full",
-              "opacity-0"
-            );
-
-            // Slide berikutnya bergerak masuk dari kanan (translate-x-full)
-            const nextIndex = (index + 1) % slides.length;
-            slides[nextIndex].classList.remove(
-              "-translate-x-full",
-              "opacity-100"
-            );
-            slides[nextIndex].classList.add(
-              "translate-x-full",
-              "-z-10",
-              "opacity-0"
-            );
-
-            // Jadwalkan transisi ke slide berikutnya
-            setTimeout(() => {
-              currentIndex = nextIndex;
-              showSlide(currentIndex);
-            }, 4000); // Durasi setiap slide
-          }
-
-          // Memulai slider
-          showSlide(currentIndex);
-        });
-      </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const detailsElements = document.querySelectorAll("details");
-
-          detailsElements.forEach((details) => {
-            details.addEventListener("toggle", () => {
-              if (details.open) {
-                // Tutup semua elemen <details> lainnya
-                detailsElements.forEach((otherDetails) => {
-                  if (otherDetails !== details) {
-                    otherDetails.open = false;
-                  }
-                });
-              }
-            });
-          });
-        });
-      </script>
+      <script src="script.js"></script>
       <!--  
       <script>
         document.addEventListener("DOMContentLoaded", () => {
