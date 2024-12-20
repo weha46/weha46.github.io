@@ -741,18 +741,32 @@
               "translate-x-full",
               "-translate-x-full"
             );
-            slides[index].classList.remove("-z-10");
-            slides[index].classList.add("translate-x-0", "z-10");
+            slides[index].classList.remove("-z-10", "opacity-0");
+            slides[index].classList.add("translate-x-0", "z-10", "opacity-100");
 
             // Slide sebelumnya bergerak ke kiri (-translate-x-full)
             const previousIndex = (index - 1 + slides.length) % slides.length;
-            slides[previousIndex].classList.remove("translate-x-0", "z-10");
-            slides[previousIndex].classList.add("-translate-x-full");
+            slides[previousIndex].classList.remove(
+              "translate-x-0",
+              "z-10",
+              "opacity-100"
+            );
+            slides[previousIndex].classList.add(
+              "-translate-x-full",
+              "opacity-0"
+            );
 
             // Slide berikutnya bergerak masuk dari kanan (translate-x-full)
             const nextIndex = (index + 1) % slides.length;
-            slides[nextIndex].classList.remove("-translate-x-full");
-            slides[nextIndex].classList.add("translate-x-full", "-z-10");
+            slides[nextIndex].classList.remove(
+              "-translate-x-full",
+              "opacity-100"
+            );
+            slides[nextIndex].classList.add(
+              "translate-x-full",
+              "-z-10",
+              "opacity-0"
+            );
 
             // Jadwalkan transisi ke slide berikutnya
             setTimeout(() => {
