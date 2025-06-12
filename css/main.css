@@ -1541,10 +1541,6 @@ input[type="checkbox"]:checked:focus {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.grid-rows-5 {
-  grid-template-rows: repeat(5, minmax(0, 1fr));
-}
-
 .grid-rows-\[auto_1fr_auto\] {
   grid-template-rows: auto 1fr auto;
 }
@@ -2525,70 +2521,6 @@ input[type="checkbox"]:checked:focus {
   }
 }
 
-.\[oaicite\:10\] {
-  oaicite: 10;
-}
-
-.\[oaicite\:11\] {
-  oaicite: 11;
-}
-
-.\[oaicite\:12\] {
-  oaicite: 12;
-}
-
-.\[oaicite\:13\] {
-  oaicite: 13;
-}
-
-.\[oaicite\:14\] {
-  oaicite: 14;
-}
-
-.\[oaicite\:15\] {
-  oaicite: 15;
-}
-
-.\[oaicite\:16\] {
-  oaicite: 16;
-}
-
-.\[oaicite\:1\] {
-  oaicite: 1;
-}
-
-.\[oaicite\:2\] {
-  oaicite: 2;
-}
-
-.\[oaicite\:3\] {
-  oaicite: 3;
-}
-
-.\[oaicite\:4\] {
-  oaicite: 4;
-}
-
-.\[oaicite\:5\] {
-  oaicite: 5;
-}
-
-.\[oaicite\:6\] {
-  oaicite: 6;
-}
-
-.\[oaicite\:7\] {
-  oaicite: 7;
-}
-
-.\[oaicite\:8\] {
-  oaicite: 8;
-}
-
-.\[oaicite\:9\] {
-  oaicite: 9;
-}
-
 .\[writing-mode\:horizontal\] {
   writing-mode: horizontal;
 }
@@ -2910,6 +2842,11 @@ input[type="checkbox"]:checked:focus {
 
 .dark\:font-normal:is(.dark *) {
   font-weight: 400;
+}
+
+.dark\:text-conime-600:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(207 1 43 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
@@ -3854,11 +3791,6 @@ input[type="checkbox"]:checked:focus {
 .\[\&\>p\]\:my-3>p {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
-}
-
-.\[\&\>p\]\:my-6>p {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .\[\&\>p\]\:text-justify>p {
