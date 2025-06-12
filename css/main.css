@@ -2631,11 +2631,6 @@ input[type="checkbox"]:checked:focus {
   background-color: rgb(160 1 35 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-zinc-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 228 231 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-zinc-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity, 1));
@@ -2980,11 +2975,6 @@ input[type="checkbox"]:checked:focus {
 .dark\:hover\:bg-conime-500:hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 21 69 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:bg-zinc-800:hover:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:dark\:bg-zinc-800:is(.dark *):hover {
