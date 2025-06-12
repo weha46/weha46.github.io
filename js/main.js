@@ -144,7 +144,7 @@ function copyShareLink() {
 
 // ====== LOADING SCREEN ======
 const MIN_LOADING_TIME = 9000;
-const loading = $('#loading-screen1');
+const loading = $('#loading-screen');
 const header = $('header');
 const footer = $('footer'); 
 const menuKiri = $('#menu-kiri');
