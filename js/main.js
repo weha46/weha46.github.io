@@ -106,7 +106,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     lastViewed.forEach(item => {
       const li = document.createElement("li");
-      li.className = "relative flex flex-1 justify-start items-center group gap-x-0 w-full h-full bg-cover overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-zinc-900 from-0% via-zinc-50 dark:via-zinc-950 via-70% to-zinc-300 dark:to-zinc-950 to-100%";
+      li.className = "relative flex flex-1 justify-start items-center group gap-x-0 w-full h-full bg-cover overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-950 via-70% to-gray-300 dark:to-gray-950 to-100%";
       const imageSrc = item.image || "/images/default.webp";
 
       li.innerHTML = `
@@ -235,11 +235,11 @@ if (alreadyShown === 'true') {
   // Fungsi bantu ganti style tombol
   function setDisabledStyle(disabled) {
     if (disabled) {
-      btn.classList.add("bg-zinc-600", "dark:bg-zinc-800", "cursor-not-allowed");
-      btn.classList.remove("bg-conime-600", "hover:bg-conime-700", "dark:hover:bg-conime-500");
+      btn.classList.add("bg-gray-600", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
+      btn.classList.remove("bg-conime-400", "dark:bg-conime-500", "hover:bg-conime-600", "dark:hover:bg-conime-300");
     } else {
-      btn.classList.remove("bg-zinc-600", "dark:bg-zinc-800", "cursor-not-allowed");
-      btn.classList.add("bg-conime-600", "hover:bg-conime-700", "dark:hover:bg-conime-500");
+      btn.classList.remove("bg-gray-600", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
+      btn.classList.add("bg-conime-400", "dark:bg-conime-500", "hover:bg-conime-600", "dark:hover:bg-conime-300");
     }
   }
 });
