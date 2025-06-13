@@ -5,13 +5,16 @@
   if (metaEl) {
     try {
       const raw = JSON.parse(metaEl.textContent);
-      // Jika isinya array yang berisi satu string besar (escape JSON)
-      if (Array.isArray(raw) && typeof raw[0] === "string") {
-        posts = JSON.parse(raw[0]);
-      } else if (Array.isArray(raw)) {
-        posts = raw;
+      if (Array.isArray(raw)) {
+        if (typeof raw[0] === "object") {
+          posts = raw;
+        } else if (typeof raw[0] === "string") {
+          posts = JSON.parse(raw[0]); // format lama (escaped string)
+        } else {
+          console.warn("⚠️ Format metadata tidak dikenali (isi array tidak object/string):", raw);
+        }
       } else {
-        console.warn("Format metadata tidak dikenali:", raw);
+        console.warn("⚠️ Metadata bukan array:", raw);
       }
     } catch (err) {
       console.error("❌ Gagal parse metadata:", err);
@@ -26,17 +29,17 @@
   if (popularContainer) {
     fetch("https://weha.goatcounter.com/api/v0/stats")
       .then(res => {
-        if (!res.ok) throw new Error("API gagal");
+        if (!res.ok) throw new Error("Gagal mengambil data dari GoatCounter");
         return res.json();
       })
       .then(data => {
-        const items = data?.stats?.paths;
-        if (!items || !items.length) throw new Error("Data kosong");
-
+        const items = data?.stats?.paths || [];
         const filtered = items
           .filter(i => i.path.startsWith("/posts/"))
           .sort((a, b) => b.count - a.count)
           .slice(0, 3);
+
+        if (!filtered.length) throw new Error("Tidak ada data popular post dari GoatCounter");
 
         let html = `
           <h2 class="text-xl uppercase font-medium border-b border-gray-300 dark:border-gray-800/50 pb-2 mb-4">
@@ -51,7 +54,7 @@
           const image = meta?.image || "/images/default.jpg";
 
           html += `
-            <li class="relative flex flex-col w-full bg-gradient-to-br from-white dark:from-gray-900 via-gray-50 dark:via-gray-950 to-gray-300 dark:to-gray-950 overflow-hidden rounded-xl shadow-lg transition duration-300 ease-in-out">
+            <li class="relative hasil-json flex flex-col w-full bg-gradient-to-br from-white dark:from-gray-900 via-gray-50 dark:via-gray-950 to-gray-300 dark:to-gray-950 overflow-hidden rounded-xl shadow-lg transition duration-300 ease-in-out">
               <a href="${slug}" class="w-full h-full">
                 <img loading="lazy" src="${image}" alt="gambar ${title}" class="w-full h-[360px] object-cover rounded-t-xl brightness-75 hover:brightness-100 transition duration-300 ease-in-out">
               </a>
@@ -71,7 +74,7 @@
         popularContainer.innerHTML = html;
       })
       .catch(err => {
-        console.warn("❌ Gagal load data dari GoatCounter:", err);
+        console.warn("❌ Gagal load popular post:", err);
         if (fallbackContent) {
           popularContainer.innerHTML = fallbackContent.innerHTML;
         }
