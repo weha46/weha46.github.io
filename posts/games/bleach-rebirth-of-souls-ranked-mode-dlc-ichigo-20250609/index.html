@@ -1776,6 +1776,7 @@ function fallbackHandler(img, el, selector) {
 
 
 
+
   <footer
     class="text-sm mt-12 sm:mt-6 flex  relative text-gray-800 dark:text-gray-400   items-center justify-center transition duration-300 ease-in-out px-6 sm:px-20 md:px-32">
     <section class="absolute hidden  left-0 right-0 bottom-0 h-full w-full text-gray-800 dark:text-gray-400  ">
@@ -1925,7 +1926,17 @@ function fallbackHandler(img, el, selector) {
   const postData = document.getElementById('post-metadata');
   const posts = postData ? JSON.parse(postData.textContent) : [];
 
-  const getMetadata = (path) => posts.find(p => p.permalink === path);
+  console.log("📦 Post Metadata Loaded:", posts);
+
+  const getMetadata = (path) => {
+    const match = posts.find(p => p.permalink === path);
+    if (!match) {
+      console.warn("❌ Metadata tidak ditemukan untuk:", path);
+    } else {
+      console.log("✅ Metadata cocok ditemukan untuk:", path, match);
+    }
+    return match;
+  };
 
   const popularContainer = document.getElementById("popular-news");
   const fallbackContent = document.getElementById("recommended-fallback");
@@ -1946,19 +1957,28 @@ function fallbackHandler(img, el, selector) {
     const websiteId = "ac1250c2-e2aa-48a1-9b97-205d83de250e";
     const apiKey = "api_zFYJY6zltdcM8H1yUVH9gdWfhLIWkEyt";
 
+    console.log("📅 Rentang tanggal:", { start, end });
+
     fetch(`https://cloud.umami.is/api/websites/${websiteId}/stats/pages?start=${start}&end=${end}`, {
       headers: {
         Authorization: `Bearer ${apiKey}`
       }
     })
-    .then(res => res.json())
+    .then(res => {
+      console.log("🌐 Response Umami:", res);
+      return res.json();
+    })
     .then(data => {
+      console.log("📊 Data Popular Pages:", data);
+
       const filtered = (data?.data || [])
         .filter(p => p.url.startsWith("/posts/"))
         .sort((a, b) => b.visits - a.visits)
-        .slice(0, 5); 
+        .slice(0, 5);
 
-      if (filtered.length === 0) throw new Error("No recent data");
+      console.log("🔥 Hasil Filter:", filtered);
+
+      if (filtered.length === 0) throw new Error("⚠️ Tidak ada data populer dalam 7 hari terakhir.");
 
       let html = `
         <h2 class="text-xl uppercase font-medium border-b pb-2 mb-4">Popular This Week</h2>
@@ -1984,19 +2004,23 @@ function fallbackHandler(img, el, selector) {
       html += `</ul>`;
       popularContainer.innerHTML = html;
       fallbackContent.classList.add("hidden");
+
+      console.log("✅ Popular posts ditampilkan!");
     })
     .catch(err => {
-      console.warn("Gagal ambil data Umami:", err);
+      console.error("💥 Gagal ambil data Umami:", err);
       if (fallbackContent) {
         fallbackContent.classList.remove("hidden");
         popularContainer.innerHTML = fallbackContent.innerHTML;
+        console.log("🔁 Menampilkan fallback populer dari Hugo.");
       }
     });
+  } else {
+    console.warn("🚫 Elemen popular-news tidak ditemukan atau metadata kosong.");
   }
 </script>
 
     </div>
-
 
 
 
