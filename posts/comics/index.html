@@ -1572,43 +1572,82 @@ function fallbackHandler(img, el, selector) {
 </noscript>
 
 
+
 <script defer src="https://cloud.umami.is/script.js" data-website-id="ac1250c2-e2aa-48a1-9b97-205d83de250e"></script>
 <script>
   const postData = document.getElementById('post-metadata');
-  const posts = JSON.parse(postData.textContent);
+  const posts = postData ? JSON.parse(postData.textContent) : [];
 
-  const getMetadata = (path) => posts.find(p => p.permalink === path);
+  console.log("📦 Post Metadata Loaded:", posts);
+
+  const getMetadata = (path) => {
+    const match = posts.find(p => p.permalink === path);
+    if (!match) {
+      console.warn("❌ Metadata tidak ditemukan untuk:", path);
+    } else {
+      console.log("✅ Metadata cocok ditemukan untuk:", path, match);
+    }
+    return match;
+  };
 
   const popularContainer = document.getElementById("popular-news");
   const fallbackContent = document.getElementById("recommended-fallback");
 
-  if (popularContainer) {
-    fetch("https://cloud.umami.is/api/websites/ac1250c2-e2aa-48a1-9b97-205d83de250e/pages?limit=10", {
+  const getLast7DaysRange = () => {
+    const end = new Date();
+    const start = new Date();
+    start.setDate(end.getDate() - 7);
+
+    return {
+      start: start.toISOString().split('T')[0],
+      end: end.toISOString().split('T')[0]
+    };
+  };
+
+  if (popularContainer && posts.length > 0) {
+    const { start, end } = getLast7DaysRange();
+    const websiteId = "ac1250c2-e2aa-48a1-9b97-205d83de250e";
+    const apiKey = "api_zFYJY6zltdcM8H1yUVH9gdWfhLIWkEyt";
+
+    console.log("📅 Rentang tanggal:", { start, end });
+
+    fetch(`https://cloud.umami.is/api/websites/${websiteId}/stats/pages?start=${start}&end=${end}`, {
       headers: {
-        Authorization: "Bearer api_zFYJY6zltdcM8H1yUVH9gdWfhLIWkEyt"
+        Authorization: `Bearer ${apiKey}`
       }
     })
-    .then(res => res.json())
+    .then(res => {
+      console.log("🌐 Response Umami:", res);
+      return res.json();
+    })
     .then(data => {
-      const filtered = data.results
+      console.log("📊 Data Popular Pages:", data);
+
+      const filtered = (data?.data || [])
         .filter(p => p.url.startsWith("/posts/"))
         .sort((a, b) => b.visits - a.visits)
-        .slice(0, 3);
+        .slice(0, 5);
 
-      let html = `<h2 class="text-xl uppercase font-medium border-b pb-2 mb-4">Popular News</h2><ul class="flex flex-col gap-4">`;
+      console.log("🔥 Hasil Filter:", filtered);
 
-      filtered.forEach((item, i) => {
+      if (filtered.length === 0) throw new Error("⚠️ Tidak ada data populer dalam 7 hari terakhir.");
+
+      let html = `
+        <h2 class="text-xl uppercase font-medium border-b pb-2 mb-4">Popular This Week</h2>
+        <ul class="grid md:grid-cols-3 gap-4">`;
+
+      filtered.forEach(item => {
         const meta = getMetadata(item.url);
         const title = meta?.title || item.url;
         const image = meta?.image || "/images/default.png";
 
         html += `
-          <li class="rounded overflow-hidden shadow">
+          <li class="rounded overflow-hidden shadow hover:shadow-lg transition">
             <a href="${item.url}">
-              <img src="${image}" alt="${title}" class="w-full h-[300px] object-cover" />
-              <div class="p-4">
-                <h3 class="font-bold text-xl">${title}</h3>
-                <p>— Popular</p>
+              <img src="${image}" alt="${title}" class="w-full h-48 object-cover" />
+              <div class="p-4 bg-white dark:bg-zinc-900">
+                <h3 class="font-semibold text-lg">${title}</h3>
+                <p class="text-sm text-zinc-600 dark:text-zinc-300">— Popular this week</p>
               </div>
             </a>
           </li>`;
@@ -1616,19 +1655,26 @@ function fallbackHandler(img, el, selector) {
 
       html += `</ul>`;
       popularContainer.innerHTML = html;
+      fallbackContent.classList.add("hidden");
+
+      console.log("✅ Popular posts ditampilkan!");
     })
     .catch(err => {
-      console.warn("Gagal ambil data Umami:", err);
+      console.error("💥 Gagal ambil data Umami:", err);
       if (fallbackContent) {
+        fallbackContent.classList.remove("hidden");
         popularContainer.innerHTML = fallbackContent.innerHTML;
+        console.log("🔁 Menampilkan fallback populer dari Hugo.");
       }
     });
+  } else {
+    console.warn("🚫 Elemen popular-news tidak ditemukan atau metadata kosong.");
   }
 </script>
 
     </div>
 
- 
+
 
 
 

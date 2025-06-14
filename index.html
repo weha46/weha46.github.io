@@ -3503,7 +3503,17 @@ function fallbackHandler(img, el, selector) {
   const postData = document.getElementById('post-metadata');
   const posts = postData ? JSON.parse(postData.textContent) : [];
 
-  const getMetadata = (path) => posts.find(p => p.permalink === path);
+  console.log("📦 Post Metadata Loaded:", posts);
+
+  const getMetadata = (path) => {
+    const match = posts.find(p => p.permalink === path);
+    if (!match) {
+      console.warn("❌ Metadata tidak ditemukan untuk:", path);
+    } else {
+      console.log("✅ Metadata cocok ditemukan untuk:", path, match);
+    }
+    return match;
+  };
 
   const popularContainer = document.getElementById("popular-news");
   const fallbackContent = document.getElementById("recommended-fallback");
@@ -3524,19 +3534,28 @@ function fallbackHandler(img, el, selector) {
     const websiteId = "ac1250c2-e2aa-48a1-9b97-205d83de250e";
     const apiKey = "api_zFYJY6zltdcM8H1yUVH9gdWfhLIWkEyt";
 
+    console.log("📅 Rentang tanggal:", { start, end });
+
     fetch(`https://cloud.umami.is/api/websites/${websiteId}/stats/pages?start=${start}&end=${end}`, {
       headers: {
         Authorization: `Bearer ${apiKey}`
       }
     })
-    .then(res => res.json())
+    .then(res => {
+      console.log("🌐 Response Umami:", res);
+      return res.json();
+    })
     .then(data => {
+      console.log("📊 Data Popular Pages:", data);
+
       const filtered = (data?.data || [])
         .filter(p => p.url.startsWith("/posts/"))
         .sort((a, b) => b.visits - a.visits)
-        .slice(0, 5); 
+        .slice(0, 5);
 
-      if (filtered.length === 0) throw new Error("No recent data");
+      console.log("🔥 Hasil Filter:", filtered);
+
+      if (filtered.length === 0) throw new Error("⚠️ Tidak ada data populer dalam 7 hari terakhir.");
 
       let html = `
         <h2 class="text-xl uppercase font-medium border-b pb-2 mb-4">Popular This Week</h2>
@@ -3562,14 +3581,19 @@ function fallbackHandler(img, el, selector) {
       html += `</ul>`;
       popularContainer.innerHTML = html;
       fallbackContent.classList.add("hidden");
+
+      console.log("✅ Popular posts ditampilkan!");
     })
     .catch(err => {
-      console.warn("Gagal ambil data Umami:", err);
+      console.error("💥 Gagal ambil data Umami:", err);
       if (fallbackContent) {
         fallbackContent.classList.remove("hidden");
         popularContainer.innerHTML = fallbackContent.innerHTML;
+        console.log("🔁 Menampilkan fallback populer dari Hugo.");
       }
     });
+  } else {
+    console.warn("🚫 Elemen popular-news tidak ditemukan atau metadata kosong.");
   }
 </script>
 
@@ -3577,95 +3601,96 @@ function fallbackHandler(img, el, selector) {
 
 
 
-  <script type="application/json" id="post-metadata">
-  [
-      {
-        "permalink": "\"/posts/movies/review-rurouni-kenshin-2012-liveaction/\"",
-        "title": "\"Review Rurouni Kenshin (2012): Samurai Penebus Dosa dan Chemistry Mengena\"",
-        "image": "\"/images/movies/rurouni_kenshin_2012.jpg\""
-      },
-      {
-        "permalink": "\"/posts/games/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609/\"",
-        "title": "\"Bleach: Rebirth of Souls Hadirkan Mode Ranked dan DLC Ichigo Kurosaki (Thousand-Year Blood War)\"",
-        "image": "\"/images/games/bleach-rebirth-of-souls-ranked-mode-dlc.png\""
-      },
-      {
-        "permalink": "\"/posts/animes/review-belle-anime-20250611/\"",
-        "title": "\"Review Belle: Keajaiban Suara, Visual, dan Emosi di Dunia Virtual\"",
-        "image": "\"/images/animes/BellePosterBlank.jpg\""
-      },
-      {
-        "permalink": "\"/posts/comics/death-of-the-silver-surfer-1-rilis-marvel-20250611/\"",
-        "title": "\"Death of the Silver Surfer #1 Rilis di Marvel, Perjalanan Terakhir Norrin Radd Dimulai\"",
-        "image": "\"/images/comics/death-of-the-silver-surfer-1.jpg\""
-      },
-      {
-        "permalink": "\"/posts/animes/review-zenshuu-anime-20250611/\"",
-        "title": "\"Review Zenshuu: Perjalanan Natsuko dalam Dunia Animasi, Takdir, dan Cinta Pertama\"",
-        "image": "\"/images/animes/Zenshuu-review.jpg\""
-      },
-      {
-        "permalink": "\"/posts/animes/anime-gachiakuta-penayangan-global-lagu-tema-karakter-baru-20250606/\"",
-        "title": "\"Gachiakuta Umumkan Penayangan Perdana Global, Lagu Tema, dan Karakter Baru Jelang Tayang 6 Juli\"",
-        "image": "\"/images/animes/gachiakuta-world-takeover.png\""
-      },
-      {
-        "permalink": "\"/posts/movies/fantastic-four-first-steps-main-theme-20250606/\"",
-        "title": "\"Marvel Rilis 'The Fantastic Four: First Steps' Main Theme oleh Michael Giacchino\"",
-        "image": "\"/images/movies/fantastic-four-first-steps-main-theme.png\""
-      },
-      {
-        "permalink": "\"/posts/comics/chainsaw-man-volume-18-rilis-viz-20250603/\"",
-        "title": "\"Chainsaw Man Volume 18 Rilis di VIZ, Denji dan Nayuta Hadapi Ancaman Gereja Chainsaw\"",
-        "image": "\"/images/comics/chainsaw-man-vol18.jpg\""
-      },
-      {
-        "permalink": "\"/posts/comics/dr-stone-volume-27-rilis-viz-20250603/\"",
-        "title": "\"Dr. Stone Volume 27 Rilis di VIZ, Senku dan Tim Membangun Mesin Waktu\"",
-        "image": "\"/images/comics/dr-stone-vol27.jpg\""
-      },
-      {
-        "permalink": "\"/posts/comics/kaiju-no-8-volume-13-rilis-viz-20250603/\"",
-        "title": "\"Kaiju No. 8 Volume 13 Rilis di VIZ, Kafka Hadapi Ancaman Baru\"",
-        "image": "\"/images/comics/kaiju-no-8-vol13.jpg\""
-      },
-      {
-        "permalink": "\"/posts/comics/bugle-call-song-of-war-volume-1-rilis-viz-20250603/\"",
-        "title": "\"The Bugle Call: Song of War Volume 1 Rilis di VIZ, Kisahkan Perang, Musik, dan Takdir Seorang Bugler\"",
-        "image": "\"/images/comics/bugle-call-song-of-war-vol1.png\""
-      },
-      {
-        "permalink": "\"/posts/animes/toritsukare-otoko-anime-pengumuman-adaptasi-20250603/\"",
-        "title": "\"Toritsukare Otoko Umumkan Adaptasi Film Anime oleh Shin-Ei Animation, Tayang Musim Gugur 2025\"",
-        "image": "\"/images/animes/toritsukare-otoko.jpeg\""
-      },
-      {
-        "permalink": "\"/posts/games/dragon-ball-xenoverse-2-daima-pack-20250522/\"",
-        "title": "\"Dragon Ball Xenoverse 2 Hadirkan Dragon Ball DAIMA Pack dengan Goku SS4 \\u0026 Vegeta SS3\"",
-        "image": "\"/images/games/featured-image-dragon-ball-xenoverse-2-alt-art.webp\""
-      },
-      {
-        "permalink": "\"/posts/movies/dc-superman-trailer-breakdown-20250520/\"",
-        "title": "\"DC Ungkap Detail Baru dalam Trailer Superman\"",
-        "image": "\"/images/movies/superman-trailer-breakdown.png\""
-      },
-      {
-        "permalink": "\"/posts/games/dragon-ball-sparking-zero-daima-dlc-pack1-20250424/\"",
-        "title": "\"Dragon Ball: Sparking! ZERO Hadirkan DLC Dragon Ball DAIMA Pack 1 dengan 8 Karakter Baru\"",
-        "image": "\"/images/games/dbsz-DAIMA-DLC2.jpg\""
-      },
-      {
-        "permalink": "\"/posts/animes/kagurabachi-anime-adaptation-20250301/\"",
-        "title": "\"Kagurabachi Resmi Dapatkan Adaptasi Anime oleh CyberAgent dan Shochiku\"",
-        "image": "\"/images/animes/kagurabachi-anime-announcement.png\""
-      },
-      {
-        "permalink": "\"/posts/movies/under-ninja-live-action-announcement-20250407/\"",
-        "title": "\"Film Live-Action Under Ninja Umumkan Pemeran Utama \\u0026 Jadwal Tayang\"",
-        "image": "\"/images/movies/Under_Ninja-p.jpeg\""
-      }
-  ]
-  </script>
+ <script type="application/json" id="post-metadata">
+[
+  {
+    "permalink": "\/posts\/movies\/review-rurouni-kenshin-2012-liveaction\/",
+    "title": "\"Review Rurouni Kenshin (2012): Samurai Penebus Dosa dan Chemistry Mengena\"",
+    "image": "\/images\/movies\/rurouni_kenshin_2012.jpg"
+  },
+  {
+    "permalink": "\/posts\/games\/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609\/",
+    "title": "\"Bleach: Rebirth of Souls Hadirkan Mode Ranked dan DLC Ichigo Kurosaki (Thousand-Year Blood War)\"",
+    "image": "\/images\/games\/bleach-rebirth-of-souls-ranked-mode-dlc.png"
+  },
+  {
+    "permalink": "\/posts\/animes\/review-belle-anime-20250611\/",
+    "title": "\"Review Belle: Keajaiban Suara, Visual, dan Emosi di Dunia Virtual\"",
+    "image": "\/images\/animes\/BellePosterBlank.jpg"
+  },
+  {
+    "permalink": "\/posts\/comics\/death-of-the-silver-surfer-1-rilis-marvel-20250611\/",
+    "title": "\"Death of the Silver Surfer #1 Rilis di Marvel, Perjalanan Terakhir Norrin Radd Dimulai\"",
+    "image": "\/images\/comics\/death-of-the-silver-surfer-1.jpg"
+  },
+  {
+    "permalink": "\/posts\/animes\/review-zenshuu-anime-20250611\/",
+    "title": "\"Review Zenshuu: Perjalanan Natsuko dalam Dunia Animasi, Takdir, dan Cinta Pertama\"",
+    "image": "\/images\/animes\/Zenshuu-review.jpg"
+  },
+  {
+    "permalink": "\/posts\/animes\/anime-gachiakuta-penayangan-global-lagu-tema-karakter-baru-20250606\/",
+    "title": "\"Gachiakuta Umumkan Penayangan Perdana Global, Lagu Tema, dan Karakter Baru Jelang Tayang 6 Juli\"",
+    "image": "\/images\/animes\/gachiakuta-world-takeover.png"
+  },
+  {
+    "permalink": "\/posts\/movies\/fantastic-four-first-steps-main-theme-20250606\/",
+    "title": "\"Marvel Rilis 'The Fantastic Four: First Steps' Main Theme oleh Michael Giacchino\"",
+    "image": "\/images\/movies\/fantastic-four-first-steps-main-theme.png"
+  },
+  {
+    "permalink": "\/posts\/comics\/chainsaw-man-volume-18-rilis-viz-20250603\/",
+    "title": "\"Chainsaw Man Volume 18 Rilis di VIZ, Denji dan Nayuta Hadapi Ancaman Gereja Chainsaw\"",
+    "image": "\/images\/comics\/chainsaw-man-vol18.jpg"
+  },
+  {
+    "permalink": "\/posts\/comics\/dr-stone-volume-27-rilis-viz-20250603\/",
+    "title": "\"Dr. Stone Volume 27 Rilis di VIZ, Senku dan Tim Membangun Mesin Waktu\"",
+    "image": "\/images\/comics\/dr-stone-vol27.jpg"
+  },
+  {
+    "permalink": "\/posts\/comics\/kaiju-no-8-volume-13-rilis-viz-20250603\/",
+    "title": "\"Kaiju No. 8 Volume 13 Rilis di VIZ, Kafka Hadapi Ancaman Baru\"",
+    "image": "\/images\/comics\/kaiju-no-8-vol13.jpg"
+  },
+  {
+    "permalink": "\/posts\/comics\/bugle-call-song-of-war-volume-1-rilis-viz-20250603\/",
+    "title": "\"The Bugle Call: Song of War Volume 1 Rilis di VIZ, Kisahkan Perang, Musik, dan Takdir Seorang Bugler\"",
+    "image": "\/images\/comics\/bugle-call-song-of-war-vol1.png"
+  },
+  {
+    "permalink": "\/posts\/animes\/toritsukare-otoko-anime-pengumuman-adaptasi-20250603\/",
+    "title": "\"Toritsukare Otoko Umumkan Adaptasi Film Anime oleh Shin-Ei Animation, Tayang Musim Gugur 2025\"",
+    "image": "\/images\/animes\/toritsukare-otoko.jpeg"
+  },
+  {
+    "permalink": "\/posts\/games\/dragon-ball-xenoverse-2-daima-pack-20250522\/",
+    "title": "\"Dragon Ball Xenoverse 2 Hadirkan Dragon Ball DAIMA Pack dengan Goku SS4 \\u0026 Vegeta SS3\"",
+    "image": "\/images\/games\/featured-image-dragon-ball-xenoverse-2-alt-art.webp"
+  },
+  {
+    "permalink": "\/posts\/movies\/dc-superman-trailer-breakdown-20250520\/",
+    "title": "\"DC Ungkap Detail Baru dalam Trailer Superman\"",
+    "image": "\/images\/movies\/superman-trailer-breakdown.png"
+  },
+  {
+    "permalink": "\/posts\/games\/dragon-ball-sparking-zero-daima-dlc-pack1-20250424\/",
+    "title": "\"Dragon Ball: Sparking! ZERO Hadirkan DLC Dragon Ball DAIMA Pack 1 dengan 8 Karakter Baru\"",
+    "image": "\/images\/games\/dbsz-DAIMA-DLC2.jpg"
+  },
+  {
+    "permalink": "\/posts\/animes\/kagurabachi-anime-adaptation-20250301\/",
+    "title": "\"Kagurabachi Resmi Dapatkan Adaptasi Anime oleh CyberAgent dan Shochiku\"",
+    "image": "\/images\/animes\/kagurabachi-anime-announcement.png"
+  },
+  {
+    "permalink": "\/posts\/movies\/under-ninja-live-action-announcement-20250407\/",
+    "title": "\"Film Live-Action Under Ninja Umumkan Pemeran Utama \\u0026 Jadwal Tayang\"",
+    "image": "\/images\/movies\/Under_Ninja-p.jpeg"
+  }
+]
+</script>
+
 
 
 
