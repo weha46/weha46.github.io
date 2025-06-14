@@ -3425,6 +3425,10 @@ input[type="checkbox"]:checked:focus {
     overflow: visible;
   }
 
+  .md\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
   .md\:overflow-y-scroll {
     overflow-y: scroll;
   }
@@ -3939,6 +3943,11 @@ input[type="checkbox"]:checked:focus {
   .md\:\[\&\>\*\:nth-child\(8\)\]\:col-span-4>*:nth-child(8) {
     grid-column: span 4 / span 4;
   }
+}
+
+.\[\&\>h3\]\:my-3>h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .\[\&\>h3\]\:uppercase>h3 {
