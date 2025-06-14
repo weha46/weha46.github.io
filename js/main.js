@@ -107,7 +107,7 @@ window.addEventListener("DOMContentLoaded", () => {
     lastViewed.forEach(item => {
       const li = document.createElement("li");
       li.className = "relative flex flex-1 justify-start items-center group gap-x-0 w-full h-full bg-cover overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-950 via-70% to-gray-300 dark:to-gray-950 to-100%";
-      const imageSrc = item.image || "/images/default.webp";
+      const imageSrc = item.image || "/images/default.png";
 
       li.innerHTML = `
         <img src="${imageSrc}" alt="gambar-${item.title}" class="w-full h-full  opacity-40 lg:opacity-100 group-hover:opacity-0 lg:group-hover:opacity-0 transition duration-500 ease-in-out object-cover"/>
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const fallback = "/images/default.webp";
+  const fallback = "/images/default.png";
 
   document.querySelectorAll("img").forEach(img => {
     const rawSrc = img.getAttribute("src") || "";
