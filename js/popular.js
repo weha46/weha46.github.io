@@ -1,51 +1,41 @@
-const posts = JSON.parse(document.getElementById("post-metadata").textContent);
 
-const getMetadata = (path) => posts.find(p => p.permalink === path);
+  const postData = document.getElementById('post-metadata');
+  const posts = JSON.parse(postData.textContent);
 
-const popularContainer = document.getElementById("popular-news");
-const fallbackContent = document.getElementById("recommended-fallback");
+  const getMetadata = (path) => posts.find(p => p.permalink === path);
 
-if (popularContainer) {
-  fetch("https://weha.goatcounter.com/api/v0/stats")
-    .then(res => {
-      if (!res.ok) throw new Error("Gagal mengambil data dari GoatCounter");
-      return res.json();
+  const popularContainer = document.getElementById("popular-news");
+  const fallbackContent = document.getElementById("recommended-fallback");
+
+  if (popularContainer) {
+    fetch("https://cloud.umami.is/api/websites/ac1250c2-e2aa-48a1-9b97-205d83de250e/pages?limit=10", {
+      headers: {
+        Authorization: "Bearer api_zFYJY6zltdcM8H1yUVH9gdWfhLIWkEyt"
+      }
     })
+    .then(res => res.json())
     .then(data => {
-      const items = data?.stats?.paths || [];
-      const filtered = items
-        .filter(i => i.path.startsWith("/posts/"))
-        .sort((a, b) => b.count - a.count)
+      const filtered = data.results
+        .filter(p => p.url.startsWith("/posts/"))
+        .sort((a, b) => b.visits - a.visits)
         .slice(0, 3);
 
-      if (!filtered.length) throw new Error("Tidak ada data popular post dari GoatCounter");
-
-      let html = `
-        <h2 class="text-xl uppercase font-medium border-b border-gray-300 dark:border-gray-800/50 pb-2 mb-4">
-          Popular News
-        </h2>
-        <ul class="flex flex-col gap-4">`;
+      let html = `<h2 class="text-xl uppercase font-medium border-b pb-2 mb-4">Popular News</h2><ul class="flex flex-col gap-4">`;
 
       filtered.forEach((item, i) => {
-        const slug = item.path;
-        const meta = getMetadata(slug);
-        const title = meta?.title || slug.replace("/posts/", "").replace(/[-_/]/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-        const image = meta?.image || "/images/default.jpg";
+        const meta = getMetadata(item.url);
+        const title = meta?.title || item.url;
+        const image = meta?.image || "/images/default.webp";
 
         html += `
-          <li class="relative render-json flex flex-col w-full bg-gradient-to-br from-white dark:from-gray-900 via-gray-50 dark:via-gray-950 to-gray-300 dark:to-gray-950 overflow-hidden rounded-xl shadow-lg transition duration-300 ease-in-out">
-            <a href="${slug}" class="w-full h-full">
-              <img loading="lazy" src="${image}" alt="gambar ${title}" class="w-full h-[360px] object-cover rounded-t-xl brightness-75 hover:brightness-100 transition duration-300 ease-in-out">
+          <li class="rounded overflow-hidden shadow">
+            <a href="${item.url}">
+              <img src="${image}" alt="${title}" class="w-full h-[300px] object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-xl">${title}</h3>
+                <p>— Popular</p>
+              </div>
             </a>
-            <div class="group absolute bottom-0 left-0 w-[70%] h-[70%] rounded-tr-3xl flex flex-col gap-2 p-4 bg-gradient-to-br from-white dark:from-gray-900 via-gray-50 dark:via-gray-950 to-gray-300 dark:to-gray-950">
-              <h2 class="text-2xl line-clamp-3 opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">
-                <a href="${slug}" class="hover:underline break-words">${title}</a>
-              </h2>
-              <p class="text-xl opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out"><span>—</span> Popular</p>
-              <h2 class="absolute inset-0 text-transparent text-stroke-black dark:text-stroke-white text-5xl flex items-center justify-center font-black opacity-80 dark:opacity-20 group-hover:opacity-0 transition duration-500 ease-in-out">
-                #${i + 1}
-              </h2>
-            </div>
           </li>`;
       });
 
@@ -53,9 +43,9 @@ if (popularContainer) {
       popularContainer.innerHTML = html;
     })
     .catch(err => {
-      console.warn("❌ Gagal load popular post:", err);
+      console.warn("Gagal ambil data Umami:", err);
       if (fallbackContent) {
         popularContainer.innerHTML = fallbackContent.innerHTML;
       }
     });
-}
+  } 
