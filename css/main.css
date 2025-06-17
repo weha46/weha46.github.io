@@ -2892,11 +2892,6 @@ img {
   color: rgb(212 212 216 / var(--tw-text-opacity, 1));
 }
 
-.dark\:text-gray-200:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-}
-
 .dark\:opacity-20:is(.dark *) {
   opacity: 0.2;
 }
@@ -2924,16 +2919,6 @@ img {
 .placeholder\:dark\:text-gray-300:is(.dark *)::placeholder {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
-.placeholder\:dark\:text-gray-200:is(.dark *)::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-}
-
-.placeholder\:dark\:text-gray-200:is(.dark *)::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
 }
 
 .hover\:dark\:border-white:is(.dark *):hover {
