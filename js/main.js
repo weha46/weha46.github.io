@@ -74,51 +74,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// ====== LAST VIEWED STORAGE ======
-window.addEventListener("DOMContentLoaded", () => {
-  const maxItems = 5;
-  const currentUrl = window.location.pathname;
-  const isValidSinglePage = /^\/posts\/(animes|comics|movies|games)\/.+$/.test(currentUrl);
-
-  if (isValidSinglePage) {
-    const contentTitle = $(".post-title")?.innerText.trim();
-    const contentImage = $("img.post-img")?.getAttribute("src") || "";
-
-    if (contentTitle) {
-      const currentPage = {
-        url: window.location.href,
-        title: contentTitle,
-        image: contentImage
-      };
-
-      let lastViewed = JSON.parse(localStorage.getItem("lastViewed")) || [];
-      lastViewed = lastViewed.filter(item => item.url !== currentPage.url);
-      lastViewed.unshift(currentPage);
-      lastViewed = lastViewed.slice(0, maxItems);
-      localStorage.setItem("lastViewed", JSON.stringify(lastViewed));
-    }
-  }
-
-  const listEl = $("#last-viewed-list");
-  if (listEl) {
-    const lastViewed = JSON.parse(localStorage.getItem("lastViewed")) || [];
-    listEl.innerHTML = "";
-
-    lastViewed.forEach(item => {
-      const li = document.createElement("li");
-      li.className = "relative flex flex-1 justify-start items-center group gap-x-0 w-full h-full bg-cover overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-950 via-70% to-gray-300 dark:to-gray-950 to-100%";
-      const imageSrc = item.image || "/images/default.png";
-
-      li.innerHTML = `
-        <img src="${imageSrc}" alt="gambar-${item.title}" class="w-full h-full  opacity-40 lg:opacity-100 group-hover:opacity-0 lg:group-hover:opacity-0 transition duration-500 ease-in-out object-cover"/>
-        <div class="absolute inset-0 w-full h-full flex justify-center items-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out px-4 text-2xl">
-          <h2><a href="${item.url}" class="hover:underline break-words line-clamp-2 text-xl font-light dark:font-extralight">${item.title}</a></h2>
-        </div>
-      `;
-      listEl.appendChild(li);
-    });
-  }
-});
 
 // ====== COPY SHARE LINK ======
 function copyShareLink() {
@@ -142,45 +97,6 @@ function copyShareLink() {
   });
 }
 
-// ====== LOADING SCREEN ======
-const MIN_LOADING_TIME = 9000;
-const loading = $('#loading-screen');
-const header = $('header');
-const footer = $('footer'); 
-const menuKiri = $('#menu-kiri');
-const main = $('main');
-
-const showMainContent = () => {
- if (loading) {
-  loading.classList.remove('opacity-100');
-  loading.classList.add('opacity-0');
-
-  // Setelah transisi selesai (1 detik), baru hidden agar tidak mengganggu klik
-  setTimeout(() => {
-    loading.classList.add('hidden');
-  }, 1000); // durasi fade-out
-}
-
-  header?.classList.remove('hidden'); header?.classList.add('flex');
-  footer?.classList.remove('hidden'); footer?.classList.add('flex'); 
-  main?.classList.remove('hidden');
-  menuKiri?.classList.remove('hidden'); menuKiri?.classList.add('flex');
-};
-
-const alreadyShown = sessionStorage.getItem('loadingShown');
-if (alreadyShown === 'true') {
-  showMainContent();
-} else {
-  const startTime = Date.now();
-  document.addEventListener('DOMContentLoaded', () => {
-    const elapsed = Date.now() - startTime;
-    const waitTime = Math.max(0, MIN_LOADING_TIME - elapsed);
-    setTimeout(() => {
-      sessionStorage.setItem('loadingShown', 'true');
-      showMainContent();
-    }, waitTime);
-  });
-}
 
 // ====== SUBSCRIBE FORM ======
   document.addEventListener("DOMContentLoaded", () => {
@@ -235,10 +151,10 @@ if (alreadyShown === 'true') {
   // Fungsi bantu ganti style tombol
   function setDisabledStyle(disabled) {
     if (disabled) {
-      btn.classList.add("bg-gray-600", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
+      btn.classList.add("bg-gray-400", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
       btn.classList.remove("bg-conime-400", "dark:bg-conime-500", "hover:bg-conime-600", "dark:hover:bg-conime-300");
     } else {
-      btn.classList.remove("bg-gray-600", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
+      btn.classList.remove("bg-gray-400", "dark:bg-gray-800", "hover:bg-gray-600", "hover:dark:bg-gray-800", "cursor-not-allowed");
       btn.classList.add("bg-conime-400", "dark:bg-conime-500", "hover:bg-conime-600", "dark:hover:bg-conime-300");
     }
   }

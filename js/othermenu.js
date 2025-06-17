@@ -1,9 +1,9 @@
-const otherMenu = document.getElementById("otherMenu");
+const moreMenu = document.getElementById("moreMenu");
 const navList = document.getElementById("navList");
 
 let menuShown = false;
 
-otherMenu.addEventListener("click", () => {
+moreMenu.addEventListener("click", () => {
   if (!menuShown) {
     navList.classList.remove(
       "[&>*:nth-child(5)]:hidden",

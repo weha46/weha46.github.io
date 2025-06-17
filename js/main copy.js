@@ -140,7 +140,7 @@ console.log(lastViewed);
 
         lastViewed.forEach(item => {
             const li = document.createElement("li");
-            li.className = "relative flex flex-1  justify-start items-center group gap-x-0 w-full h-full bg-cover  overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-950 via-70% to-gray-300 dark:to-gray-950 to-100%";
+            li.className = "relative flex flex-1  justify-start items-center group gap-x-0 w-full h-full bg-cover  overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-925 via-70% to-gray-300 dark:to-gray-925 to-100%";
 
             const imageSrc = item.image ? item.image : "/images/default-thumbnail.jpg"; // fallback
 
@@ -194,7 +194,7 @@ function copyShareLink() {
   const header = document.querySelector('header');
   const footer = document.querySelector('footer');
   const menuBawah = document.getElementById('menu-bawah');
-  const menuKiri = document.getElementById('menu-kiri');
+  const menuKiri = document.getElementById('main-menu');
   const main = document.querySelector('main');
 
   const showMainContent = () => {
@@ -211,7 +211,7 @@ function copyShareLink() {
 
     main?.classList.remove('hidden');
 
-    // menu-kiri khusus
+    // main-menu khusus
     menuKiri?.classList.remove('sm:hidden');
     menuKiri?.classList.add('sm:flex');
     // tetap hidden di mobile
