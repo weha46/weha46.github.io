@@ -1240,6 +1240,10 @@ img {
   height: 560px;
 }
 
+.h-\[60\%\] {
+  height: 60%;
+}
+
 .h-\[65\%\] {
   height: 65%;
 }
@@ -1474,6 +1478,10 @@ img {
   flex-wrap: wrap;
 }
 
+.content-end {
+  align-content: flex-end;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1552,6 +1560,12 @@ img {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1974,6 +1988,11 @@ img {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-2 {
@@ -3020,6 +3039,11 @@ img {
     padding-right: 0px;
   }
 
+  .sm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .sm\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -3266,12 +3290,20 @@ img {
     -webkit-line-clamp: 6;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-\[0\.1px\] {
     height: 0.1px;
   }
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:h-\[70\%\] {
+    height: 70%;
   }
 
   .lg\:h-fit {
@@ -3297,6 +3329,10 @@ img {
 
   .lg\:w-\[680px\] {
     width: 680px;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
 
   .lg\:w-\[80\%\] {
@@ -3450,6 +3486,10 @@ img {
     opacity: 0;
   }
 
+  .lg\:opacity-80 {
+    opacity: 0.8;
+  }
+
   .lg\:shadow-gray-925\/20 {
     --tw-shadow-color: rgb(10 17 32 / 0.2);
     --tw-shadow: var(--tw-shadow-colored);
@@ -3475,6 +3515,14 @@ img {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .group:hover .group-hover\:lg\:opacity-0 {
+    opacity: 0;
+  }
+
+  .group:hover .group-hover\:lg\:opacity-100 {
+    opacity: 1;
+  }
+
   .group:hover .lg\:group-hover\:opacity-0 {
     opacity: 0;
   }
@@ -3482,14 +3530,14 @@ img {
   .lg\:dark\:bg-gray-900\/80:is(.dark *) {
     background-color: rgb(17 24 39 / 0.8);
   }
+
+  .dark\:lg\:opacity-20:is(.dark *) {
+    opacity: 0.2;
+  }
 }
 
 .\[\&\>\*\:nth-child\(1\)\]\:col-span-12>*:nth-child(1) {
   grid-column: span 12 / span 12;
-}
-
-.\[\&\>\*\:nth-child\(1\)\]\:col-span-2>*:nth-child(1) {
-  grid-column: span 2 / span 2;
 }
 
 @media (min-width: 768px) {
@@ -3499,6 +3547,10 @@ img {
 }
 
 @media (min-width: 1024px) {
+  .\[\&\>\*\:nth-child\(1\)\]\:lg\:col-span-2>*:nth-child(1) {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:\[\&\>\*\:nth-child\(1\)\]\:col-span-2>*:nth-child(1) {
     grid-column: span 2 / span 2;
   }
@@ -3510,13 +3562,11 @@ img {
   .lg\:\[\&\>\*\:nth-child\(1\)\]\:col-span-8>*:nth-child(1) {
     grid-column: span 8 / span 8;
   }
-}
 
-.\[\&\>\*\:nth-child\(11\)\]\:col-span-2>*:nth-child(11) {
-  grid-column: span 2 / span 2;
-}
+  .\[\&\>\*\:nth-child\(11\)\]\:lg\:col-span-2>*:nth-child(11) {
+    grid-column: span 2 / span 2;
+  }
 
-@media (min-width: 1024px) {
   .lg\:\[\&\>\*\:nth-child\(11\)\]\:col-span-2>*:nth-child(11) {
     grid-column: span 2 / span 2;
   }
@@ -3526,15 +3576,15 @@ img {
   .md\:\[\&\>\*\:nth-child\(13\)\]\:col-span-4>*:nth-child(13) {
     grid-column: span 4 / span 4;
   }
-}
 
-.\[\&\>\*\:nth-child\(18\)\]\:col-span-2>*:nth-child(18) {
-  grid-column: span 2 / span 2;
-}
-
-@media (min-width: 768px) {
   .md\:\[\&\>\*\:nth-child\(18\)\]\:col-span-4>*:nth-child(18) {
     grid-column: span 4 / span 4;
+  }
+}
+
+@media (min-width: 1024px) {
+  .\[\&\>\*\:nth-child\(18\)\]\:lg\:col-span-2>*:nth-child(18) {
+    grid-column: span 2 / span 2;
   }
 }
 
@@ -3574,13 +3624,11 @@ img {
   .\[\&\>\*\:nth-child\(6\)\]\:lg\:flex>*:nth-child(6) {
     display: flex;
   }
-}
 
-.\[\&\>\*\:nth-child\(7\)\]\:col-span-2>*:nth-child(7) {
-  grid-column: span 2 / span 2;
-}
+  .\[\&\>\*\:nth-child\(7\)\]\:lg\:col-span-2>*:nth-child(7) {
+    grid-column: span 2 / span 2;
+  }
 
-@media (min-width: 1024px) {
   .lg\:\[\&\>\*\:nth-child\(7\)\]\:col-span-2>*:nth-child(7) {
     grid-column: span 2 / span 2;
   }
