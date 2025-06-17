@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const fallback = "/images/default.png";
+  const fallback = "/images/default.webp";
 
   document.querySelectorAll("img").forEach(img => {
     const rawSrc = img.getAttribute("src") || "";

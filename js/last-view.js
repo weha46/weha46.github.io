@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
     lastViewed.forEach(item => {
       const li = document.createElement("li");
       li.className = "relative flex flex-1 justify-start items-center group gap-x-0 w-full h-full bg-cover overflow-hidden rounded-md bg-white dark:bg-gray-925 hover:bg-gray-300 hover:dark:bg-gray-900";
-      const imageSrc = item.image || "/images/default.png";
+      const imageSrc = item.image || "/images/default.webp";
 
       li.innerHTML = `
         <img src="${imageSrc}" alt="gambar-${item.title}" class="w-full h-full opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out object-cover"/>
