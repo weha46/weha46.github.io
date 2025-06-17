@@ -25,7 +25,7 @@
       filtered.forEach((item, i) => {
         const meta = getMetadata(item.url);
         const title = meta?.title || item.url;
-        const image = meta?.image || "/images/default.webp";
+        const image = meta?.image || "/images/default.png";
 
         html += `
           <li class="rounded overflow-hidden shadow">
