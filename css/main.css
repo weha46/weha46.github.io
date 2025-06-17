@@ -1104,6 +1104,14 @@ img {
   margin-top: 24rem;
 }
 
+.mt-80 {
+  margin-top: 20rem;
+}
+
+.mt-\[360px\] {
+  margin-top: 360px;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
