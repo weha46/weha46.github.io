@@ -140,9 +140,9 @@ console.log(lastViewed);
 
         lastViewed.forEach(item => {
             const li = document.createElement("li");
-            li.className = "relative flex flex-1  justify-start items-center group gap-x-0 w-full h-full bg-cover  overflow-hidden rounded-md bg-gradient-to-br from-white dark:from-gray-900 from-0% via-gray-50 dark:via-gray-925 via-70% to-gray-300 dark:to-gray-925 to-100%";
+            li.className = "relative flex flex-1  justify-start items-center group gap-x-0 w-full h-full bg-cover  overflow-hidden rounded-md bg-white dark:bg-gray-950 ";
 
-            const imageSrc = item.image ? item.image : "/images/default-thumbnail.webp"; // fallback
+            const imageSrc = item.image ? item.image : "/images/default-thumbnail.jpg"; // fallback
 
             li.innerHTML = `
           <img src="${imageSrc}" alt="gambar-${item.title}" class="w-full h-full  group-hover:opacity-0 opacity-30 lg:opacity-100 transition duration-500 ease-in-out object-cover"/>
