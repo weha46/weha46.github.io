@@ -5,6 +5,7 @@ const header = document.querySelector('header');
 const footer = document.querySelector('footer'); 
 const menuMain = document.querySelector('#main-menu');
 const main = document.querySelector('main');
+const gooey = document.getElementById('#gooey');
 
 const showMainContent = () => {
   if (loading) {
@@ -14,6 +15,8 @@ const showMainContent = () => {
     setTimeout(() => {
       loading.classList.add('hidden'); 
     loading.classList.remove('flex');
+    loading.remove();
+    gooey.remove();
     console.log('✅ Loading Animation dihidden')
     }, 1000);
   }
