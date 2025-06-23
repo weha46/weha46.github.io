@@ -3118,8 +3118,8 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.group\/tooltip:hover .group-hover\/tooltip\:opacity-100 {
-  opacity: 1;
+.group\/tooltip:hover .group-hover\/tooltip\:opacity-0 {
+  opacity: 0;
 }
 
 .group:hover .group-hover\:opacity-0 {
@@ -3128,10 +3128,6 @@ img {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-.group\/tooltip:hover .group-hover\/tooltip\:opacity-0 {
-  opacity: 0;
 }
 
 .group:hover .group-hover\:brightness-100 {
