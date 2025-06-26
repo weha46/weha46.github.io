@@ -33,11 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const labelEl = document.querySelector(`.label-new[data-url="${slug}"]`);
     if (diff < 10800 && !isRead) {
       fireEl?.classList.remove("opacity-0", "hidden");
-      labelEl?.classList.remove("opacity-0", "hidden");
     } else {
       fireEl?.classList.add("opacity-0", "hidden");
+    }
+
+    // label hanya bergantung ke waktu
+    if (diff < 10800) {
+      labelEl?.classList.remove("opacity-0", "hidden");
+    } else {
       labelEl?.classList.add("opacity-0", "hidden");
     }
+
 
     // Notifikasi
     if (diff < 10800) {
@@ -98,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dot.classList.add("bg-gray-600", "dark:bg-gray-700");
       });
       const fireEl = document.querySelector(`.fire-new[data-url="${slug}"]`);
-      fireEl?.classList.add("opacity-0");
+      fireEl?.classList.add("opacity-0", "hidden");
 
       unreadCount--;
       updateToggleState();
@@ -121,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
           dot.classList.remove("bg-conime-500", "dark:bg-conime-500");
           dot.classList.add("bg-gray-600", "dark:bg-gray-700");
         });
-        fireEl?.classList.add("opacity-0");
+        fireEl?.classList.add("opacity-0", "hidden");
       } else {
         if (!isOld) {
           localStorage.removeItem(`notif-read:${slug}`);
@@ -130,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
             dot.classList.remove("bg-gray-600", "dark:bg-gray-700");
             dot.classList.add("bg-conime-500", "dark:bg-conime-500");
           });
-          fireEl?.classList.remove("opacity-0");
+          fireEl?.classList.remove("opacity-0", "hidden");
         }
       }
     });
