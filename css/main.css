@@ -793,10 +793,6 @@ img {
   will-change: transform;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .pointer-events-auto {
   pointer-events: auto;
 }
@@ -3518,10 +3514,6 @@ img {
     display: none;
   }
 
-  .lg\:h-\[0\.1px\] {
-    height: 0.1px;
-  }
-
   .lg\:h-\[600px\] {
     height: 600px;
   }
@@ -3541,10 +3533,6 @@ img {
 
   .lg\:h-full {
     height: 100%;
-  }
-
-  .lg\:w-\[0\.1px\] {
-    width: 0.1px;
   }
 
   .lg\:w-\[15\%\] {
