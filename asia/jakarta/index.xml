@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jakarta on CoNime</title><link>https://conime2025.github.io/asia/jakarta/</link><description>Recent content in Jakarta on CoNime</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://conime2025.github.io/asia/jakarta/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jakarta on CoNime</title>
+    <link>http://localhost:1313/asia/jakarta/</link>
+    <description>Recent content in Jakarta on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/asia/jakarta/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
