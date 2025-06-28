@@ -3138,11 +3138,6 @@
       opacity: 50%;
     }
   }
-  .dark\:opacity-80 {
-    &:where(.dark, .dark *) {
-      opacity: 80%;
-    }
-  }
   .dark\:opacity-100 {
     &:where(.dark, .dark *) {
       opacity: 100%;
