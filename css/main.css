@@ -2403,11 +2403,6 @@
       grid-column: span 4 / span 4;
     }
   }
-  .lg\:col-span-5 {
-    @media (width >= 64rem) {
-      grid-column: span 5 / span 5;
-    }
-  }
   .lg\:col-span-6 {
     @media (width >= 64rem) {
       grid-column: span 6 / span 6;
@@ -2569,11 +2564,6 @@
       grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-10 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(10, minmax(0, 1fr));
-    }
-  }
   .lg\:grid-cols-12 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -2728,6 +2718,11 @@
   .lg\:opacity-80 {
     @media (width >= 64rem) {
       opacity: 80%;
+    }
+  }
+  .lg\:opacity-100 {
+    @media (width >= 64rem) {
+      opacity: 100%;
     }
   }
   .lg\:shadow-gray-950\/20 {
@@ -3118,6 +3113,11 @@
       }
     }
   }
+  .dark\:text-gray-900 {
+    &:where(.dark, .dark *) {
+      color: var(--color-gray-900);
+    }
+  }
   .dark\:text-white {
     &:where(.dark, .dark *) {
       color: var(--color-white);
@@ -3136,6 +3136,16 @@
   .dark\:opacity-50 {
     &:where(.dark, .dark *) {
       opacity: 50%;
+    }
+  }
+  .dark\:opacity-80 {
+    &:where(.dark, .dark *) {
+      opacity: 80%;
+    }
+  }
+  .dark\:opacity-100 {
+    &:where(.dark, .dark *) {
+      opacity: 100%;
     }
   }
   .dark\:shadow-gray-950\/0 {
@@ -3385,6 +3395,13 @@
     &:where(.dark, .dark *) {
       @media (width >= 64rem) {
         opacity: 20%;
+      }
+    }
+  }
+  .dark\:lg\:opacity-100 {
+    &:where(.dark, .dark *) {
+      @media (width >= 64rem) {
+        opacity: 100%;
       }
     }
   }
