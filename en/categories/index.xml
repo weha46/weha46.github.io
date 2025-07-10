@@ -6,20 +6,34 @@
     <description>Recent content on CoNime</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 07 Jul 2025 20:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 10:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Berita</title>
+      <link>http://localhost:1313/en/categories/berita/</link>
+      <pubDate>Thu, 10 Jul 2025 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/categories/berita/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Film</title>
+      <link>http://localhost:1313/en/categories/film/</link>
+      <pubDate>Thu, 10 Jul 2025 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/categories/film/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Live-Action</title>
+      <link>http://localhost:1313/en/categories/live-action/</link>
+      <pubDate>Thu, 10 Jul 2025 10:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/categories/live-action/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Anime</title>
       <link>http://localhost:1313/en/categories/anime/</link>
       <pubDate>Mon, 07 Jul 2025 20:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/categories/anime/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Berita</title>
-      <link>http://localhost:1313/en/categories/berita/</link>
-      <pubDate>Mon, 07 Jul 2025 20:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/categories/berita/</guid>
       <description></description>
     </item>
     <item>
@@ -44,24 +58,10 @@
       <description></description>
     </item>
     <item>
-      <title>Film</title>
-      <link>http://localhost:1313/en/categories/film/</link>
-      <pubDate>Fri, 06 Jun 2025 06:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/categories/film/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Manga</title>
       <link>http://localhost:1313/en/categories/manga/</link>
       <pubDate>Thu, 05 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/categories/manga/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Live-Action</title>
-      <link>http://localhost:1313/en/categories/live-action/</link>
-      <pubDate>Sun, 07 Apr 2024 10:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/categories/live-action/</guid>
       <description></description>
     </item>
   </channel>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -13,6 +13,175 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/berita/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/berita/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/berita/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/byeon-woo-seok/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/byeon-woo-seok/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/byeon-woo-seok/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/film/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/film/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/film/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/kakao-entertainment/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/kakao-entertainment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/kakao-entertainment/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/live-action/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/live-action/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/live-action/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/live-action/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/live-action/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/live-action/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/movies/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/movies/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/movies/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/netflix/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/netflix/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/netflix/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/movies/solo-leveling-live-action-netflix-20250710/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/movies/solo-leveling-live-action-netflix-20250710/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/movies/solo-leveling-live-action-netflix-20250710/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/solo-leveling/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/solo-leveling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/solo-leveling/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/anime/</loc>
@@ -67,45 +236,6 @@
                 href="http://localhost:1313/tags/anime-musim-mendatang/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/berita/</loc>
-    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/berita/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/berita/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tags/rooster-fighter/</loc>
     <lastmod>2025-07-07T20:00:00+07:00</lastmod>
     <xhtml:link
@@ -156,19 +286,6 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/sola-entertainment/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/isekai/</loc>
@@ -1445,19 +1562,6 @@
                 href="http://localhost:1313/tags/sumit-kumar/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/film/</loc>
-    <lastmod>2025-06-06T06:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/film/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/film/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tags/film-superhero/</loc>
     <lastmod>2025-06-06T06:00:00+07:00</lastmod>
     <xhtml:link
@@ -1521,19 +1625,6 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/michael-giacchino/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/movies/</loc>
-    <lastmod>2025-06-06T06:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/movies/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/movies/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/aksi/</loc>
@@ -2418,32 +2509,6 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/kento-yamazaki/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/live-action/</loc>
-    <lastmod>2024-04-07T10:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/live-action/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/live-action/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/live-action/</loc>
-    <lastmod>2024-04-07T10:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/live-action/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/live-action/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/minami-hamabe/</loc>
