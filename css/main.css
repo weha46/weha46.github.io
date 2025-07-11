@@ -8,8 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-purple-500: oklch(62.7% 0.265 303.9);
-    --color-purple-600: oklch(55.8% 0.288 302.321);
     --color-rose-600: oklch(58.6% 0.253 17.585);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
@@ -2539,6 +2537,13 @@
       }
     }
   }
+  .lg\:backdrop-blur {
+    @media (width >= 64rem) {
+      --tw-backdrop-blur: blur(8px);
+      -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+      backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    }
+  }
   .group-hover\:lg\:opacity-0 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -3108,16 +3113,6 @@
       }
     }
   }
-  .\[\&\>\*\:nth-child\(1\)\]\:order-3 {
-    &>*:nth-child(1) {
-      order: 3;
-    }
-  }
-  .\[\&\>\*\:nth-child\(1\)\]\:order-5 {
-    &>*:nth-child(1) {
-      order: 5;
-    }
-  }
   .md\:\[\&\>\*\:nth-child\(1\)\]\:col-span-4 {
     @media (width >= 48rem) {
       &>*:nth-child(1) {
@@ -3188,26 +3183,11 @@
       }
     }
   }
-  .\[\&\>\*\:nth-child\(3\)\]\:hidden {
-    &>*:nth-child(3) {
-      display: none;
-    }
-  }
-  .\[\&\>\*\:nth-child\(4\)\]\:hidden {
-    &>*:nth-child(4) {
-      display: none;
-    }
-  }
   .lg\:\[\&\>\*\:nth-child\(4\)\]\:col-span-3 {
     @media (width >= 64rem) {
       &>*:nth-child(4) {
         grid-column: span 3 / span 3;
       }
-    }
-  }
-  .\[\&\>\*\:nth-child\(5\)\]\:hidden {
-    &>*:nth-child(5) {
-      display: none;
     }
   }
   .lg\:\[\&\>\*\:nth-child\(5\)\]\:col-span-3 {
@@ -3359,14 +3339,19 @@
   }
   .bg-darklight-card {
     background-color: var(--color-white);
-    color: var(--color-gray-900);
+    color: var(--color-gray-800);
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
       }
     }
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-gray-900);
+      }
+    }
     &:where(.dark, .dark *) {
-      background-color: var(--color-gray-850);
+      background-color: var(--color-gray-800);
     }
     &:where(.dark, .dark *) {
       color: var(--color-gray-300);
@@ -3374,7 +3359,28 @@
     &:hover {
       @media (hover: hover) {
         &:where(.dark, .dark *) {
-          background-color: var(--color-gray-800);
+          background-color: var(--color-gray-700);
+        }
+      }
+    }
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-gray-200);
+        }
+      }
+    }
+    @media (width >= 64rem) {
+      &:where(.dark, .dark *) {
+        background-color: var(--color-gray-850);
+      }
+    }
+    @media (width >= 64rem) {
+      &:hover {
+        @media (hover: hover) {
+          &:where(.dark, .dark *) {
+            background-color: var(--color-gray-800);
+          }
         }
       }
     }

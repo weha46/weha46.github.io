@@ -283,10 +283,10 @@
 
   <div class="flex gap-2 w-full h-full relative">
     
-    <div id="main-menu" class="fixed pb-[env(safe-area-inset-bottom)] lg:top-20 bottom-0 left-0 z-[999]
-         lg:w-[20%] xl:w-[15%] w-full h-fit lg:h-[calc(100vh-theme(space.40))]
-         bg-darklight border-r border-gray-300 dark:border-gray-800/50
-         flex flex-row lg:flex-col justify-center items-center
+   <div id="main-menu" class="fixed pb-[env(safe-area-inset-bottom)] lg:top-20 bottom-0 left-0 z-[999]
+         lg:w-[20%] xl:w-[15%] w-full h-fit lg:h-[calc(100vh-theme(space.40))] bg-darklight
+         lg:backdrop-blur
+         border-r border-gray-300 dark:border-gray-800/50 flex-row lg:flex-col justify-center items-center
          flex">
 
 
@@ -942,11 +942,8 @@
 
 
 
-
-
-    
 <div id="notifModal"
-  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]bg-darklight-card  border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
+  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]  bg-darklight-card  border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
   <div
     class="w-fit h-fit closeModal group absolute right-4 top-4 p-0 flex gap-x-2 justify-center items-center bg-darklight-card rounded-full">
     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
