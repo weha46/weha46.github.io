@@ -106,10 +106,9 @@
 
 <body data-page-type="home" class="flex flex-col demo-3
   font-poppins text-base font-normal dark:font-light
-  inset-0 w-screen min-h-screen h-full
-  bg-white dark:bg-gray-925 text-gray-900 dark:text-gray-300
-   overflow-y-auto overscroll-y-auto overflow-style-custom-y overflow-x-hidden 
-  transition duration-300 ease-in-out">
+  inset-0 w-screen min-h-screen h-full bg-darklight
+
+   overflow-y-auto overscroll-y-auto overflow-style-custom-y overflow-x-hidden  ">
 
 
   
@@ -118,7 +117,7 @@
   
 
   <header
-    class="w-full z-[1000] min-h-12 max-h-20 h-20 flex  fixed left-0 top-0 right-0  bg-white dark:bg-gray-900 lg:bg-gray-200/50 lg:dark:bg-gray-925/80 lg:backdrop-blur  text-gray-900 dark:text-gray-100 transition duration-300 ease-in-out px-6 sm:24 lg:px-[15%] py-2 lg:py-4 flex-row justify-between items-center">
+    class="w-full z-[1000] min-h-12 max-h-20 h-20 flex  fixed left-0 top-0 right-0 bg-darklight px-6 sm:24 lg:px-[15%] py-2 lg:py-4 flex-row justify-between items-center">
     
 
 <a href="/"  data-aos="fade-left" data-aos-delay="100" data-aos-duration="2000" 
@@ -292,9 +291,7 @@
     
     <div id="main-menu" class="fixed pb-[env(safe-area-inset-bottom)] lg:top-20 bottom-0 left-0 z-[999]
          lg:w-[20%] xl:w-[15%] w-full h-fit lg:h-[calc(100vh-theme(space.40))]
-         bg-gray-200 dark:bg-gray-900 lg:bg-gray-200/50 lg:dark:bg-gray-925/80
-         lg:backdrop-blur
-         border-r border-gray-300 dark:border-gray-800/50
+         bg-darklight border-r border-gray-300 dark:border-gray-800/50
          flex flex-row lg:flex-col justify-center items-center
          flex ">
 
@@ -529,9 +526,9 @@
       
         <div class="notifBadge absolute hidden !top-[12px] !left-[28px]">
           <div class="relative flex justify-center items-center">
-            <div class="w-3 h-3 opacity-0 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-3 h-3 opacity-0 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
           </div>
         </div>
       
@@ -556,9 +553,9 @@
 
 
 
-<div id="mobileMenuModal" class="fixed inset-0 text-gray-800 dark:text-gray-400 bg-black/80 w-full h-full scale-95 hidden -z-[999] opacity-0 translate-y-10 transition-all justify-center items-end duration-300 ease-out pb-16 lg:hidden">
-  <div id="mobile-modal-container" class="relative opacity-100 bg-gray-200 dark:bg-gray-900 text-gray-800 dark:text-gray-400 transition duration-300 ease-in-out w-[90%] border border-gray-300 dark:border-gray-800/50  rounded  p-4">
-    <div id="btnCloseMobileMenu" class="closeMobileMenu w-fit h-fit group absolute right-2 top-2 p-0 flex gap-x-2 justify-center items-center shadow-none md:shadow-xl shadow-gray-950/10 lg:shadow-gray-950/20 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900/20 hover:dark:bg-gray-800  rounded -full">
+<div id="mobileMenuModal" class="fixed inset-0 bg-black/80 w-full h-full scale-95 hidden -z-[999] opacity-0 translate-y-10 transition-all justify-center items-end duration-300 ease-out pb-16 lg:hidden">
+  <div id="mobile-modal-container" class="relative opacity-100 bg-darklight-card w-[90%] border border-gray-300 dark:border-gray-800/50  rounded  p-4">
+    <div id="btnCloseMobileMenu" class="closeMobileMenu w-fit h-fit group absolute right-2 top-2 p-0 flex gap-x-2 justify-center items-center shadow-none md:shadow-xl shadow-gray-950/10 lg:shadow-gray-950/20 bg-darklight-card rounded-full">
       <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.16998 14.83L14.83 9.17004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M14.83 14.83L9.16998 9.17004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -782,9 +779,9 @@
       
         <div class="notifBadge absolute hidden top-1 left-[36px]">
           <div class="relative flex justify-center items-center">
-            <div class="w-3 h-3 opacity-0 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-3 h-3 opacity-0 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
           </div>
         </div>
       
@@ -808,7 +805,7 @@
 
 
 
-<nav id="navMobile" class="bg-white dark:bg-gray-900  w-full px-6 gap-1 block lg:hidden z-[666] lg:-z-[999] text-gray-800 dark:text-gray-400">
+<nav id="navMobile" class="bg-darklight w-full px-6 gap-1 block lg:hidden z-[666] lg:-z-[999]">
   <ul class="flex justify-center items-center py-1">
     
       
@@ -920,9 +917,9 @@
       
         <div class="notifBadge absolute hidden top-1 left-[36px]">
           <div class="relative flex justify-center items-center">
-            <div class="w-3 h-3 opacity-0 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
-            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded -full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-3 h-3 opacity-0 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-[10px] h-[10px] absolute opacity-0 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
+            <div class="w-2 h-2 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 animate-pulse  rounded-full bg-conime-500 dark:bg-conime-600"></div>
           </div>
         </div>
       
@@ -970,9 +967,9 @@
 
     
 <div id="notifModal"
-  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999] bg-gray-200 dark:bg-gray-900 text-gray-800 dark:text-gray-400  border border-gray-300 dark:border-gray-800/50 p-6  rounded  w-[320px] md:w-[440px] shadow-none md:shadow-xl shadow-gray-950/50 lg:shadow-gray-950/20  transform transition-all duration-300 ease-in-out scale-95 opacity-0 translate-y-10">
+  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]bg-darklight-card  border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
   <div
-    class="w-fit h-fit closeModal group absolute right-4 top-4 p-0 flex gap-x-2 justify-center items-center bg-gray-200 hover:bg-gray-300 dark:bg-gray-800/0 hover:dark:bg-gray-800/50  rounded -full">
+    class="w-fit h-fit closeModal group absolute right-4 top-4 p-0 flex gap-x-2 justify-center items-center bg-darklight-card rounded-full">
     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
       <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17" stroke="currentColor" stroke-width="1.5"
         stroke-linecap="round" stroke-linejoin="round" />
@@ -983,8 +980,8 @@
     <h3 class="text-md font-medium">Notification</h3>
    <div class="flex gap-3 items-center cursor-pointer mark-all-read">
   <span id="textMark" class="text-sm hidden md:inline" >Mark all as read</span>
-  <div id="toggleTrack" class="w-12 h-6 bg-gray-300 dark:bg-gray-900/30 z-10  rounded -full flex items-center justify-center px-1  transition-all duration-500 easy-in-out">
-    <div id="toggleBall" class="w-4 mx-1 h-4 -translate-x-[85%]  rounded -full bg-conime-500 dark:bg-conime-500 transition duration-300 easy-in-out"></div>
+  <div id="toggleTrack" class="w-12 h-6 bg-gray-300 dark:bg-gray-950/30 z-10 rounded-full flex items-center justify-center px-1  transition-all duration-500 easy-in-out">
+    <div id="toggleBall" class="w-4 mx-1 h-4 -translate-x-[85%] rounded-full bg-conime-500 dark:bg-conime-500 transition duration-300 easy-in-out"></div>
   </div>
 </div>
 
@@ -1024,7 +1021,7 @@
 <div class="absolute group flex hover:z-[99] transform transition duration-700 ease-in-out hover:scale-105 top-24 left-1/2 -translate-x-1/2 z-30 rotate-0 justify-center w-full lg:w-[680px] h-[680px] lg:h-[500px] py-4">
 
   <div
-    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded -full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
+    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded-full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
   </div>
   <div data-aos="slide-up" data-aos-delay="250" data-aos-duration="2000" class="flex flex-col w-full lg:w-[680px] h-full  rounded  overflow-hidden z-10">
     
@@ -1074,7 +1071,7 @@
 <div class="absolute group flex hover:z-[99] transform transition duration-700 ease-in-out hover:scale-105 top-10 md:top-12 left-0 md:-left-8 lg:-left-10 z-20 rotate-0 md:-rotate-6 justify-center w-full lg:w-[680px] h-[680px] lg:h-[500px] py-4">
 
   <div
-    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded -full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
+    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded-full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
   </div>
   <div data-aos="slide-up" data-aos-delay="250" data-aos-duration="2000" class="flex flex-col w-full lg:w-[680px] h-full  rounded  overflow-hidden z-10">
     
@@ -1124,7 +1121,7 @@
 <div class="absolute group flex hover:z-[99] transform transition duration-700 ease-in-out hover:scale-105 -top-4 md:top-4 right-0 md:-right-8 lg:-right-10 z-10 rotate-0 md:rotate-6 justify-center w-full lg:w-[680px] h-[680px] lg:h-[500px] py-4">
 
   <div
-    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded -full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
+    class="w-[80%] z-0 h-12 bg-gray-950/50 group-hover:bg-gray-950/70 group-hover:dark:bg-gray-800 transform transition duration-500 ease-in-out blur-lg  rounded-full overflow-hidden absolute bottom-1 left-1/2 -translate-x-1/2">
   </div>
   <div data-aos="slide-up" data-aos-delay="250" data-aos-duration="2000" class="flex flex-col w-full lg:w-[680px] h-full  rounded  overflow-hidden z-10">
     
@@ -1889,17 +1886,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/movies/solo-leveling-live-action-netflix-20250710/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/movies/solo-leveling-live-action-netflix-20250710/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/movies/solo-leveling-live-action-netflix-20250710/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1925,7 +1919,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="0" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/movies/solo-leveling-live-action-netflix-20250710/" class="hover:underline break-words h-50 text-2xl"
@@ -1983,17 +1977,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/anime/rooster-fighter-anime-trailer-20250707/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/anime/rooster-fighter-anime-trailer-20250707/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/anime/rooster-fighter-anime-trailer-20250707/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2019,7 +2010,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="150" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/anime/rooster-fighter-anime-trailer-20250707/" class="hover:underline break-words h-50 text-2xl"
@@ -2073,17 +2064,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2109,7 +2097,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707/" class="hover:underline break-words h-50 text-2xl"
@@ -2163,17 +2151,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2199,7 +2184,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="450" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/" class="hover:underline break-words h-50 text-2xl"
@@ -2253,17 +2238,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2289,7 +2271,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/" class="hover:underline break-words h-50 text-2xl"
@@ -2343,17 +2325,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/games/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/games/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/games/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2379,7 +2358,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="750" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/games/bleach-rebirth-of-souls-ranked-mode-dlc-ichigo-20250609/" class="hover:underline break-words h-50 text-2xl"
@@ -2433,17 +2412,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/comics/death-of-the-silver-surfer-1-rilis-marvel-20250607/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/comics/death-of-the-silver-surfer-1-rilis-marvel-20250607/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/comics/death-of-the-silver-surfer-1-rilis-marvel-20250607/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2469,7 +2445,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="900" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/comics/death-of-the-silver-surfer-1-rilis-marvel-20250607/" class="hover:underline break-words h-50 text-2xl"
@@ -2523,17 +2499,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/movies/fantastic-four-first-steps-main-theme-20250606/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/movies/fantastic-four-first-steps-main-theme-20250606/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/movies/fantastic-four-first-steps-main-theme-20250606/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2559,7 +2532,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="1050" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/movies/fantastic-four-first-steps-main-theme-20250606/" class="hover:underline break-words h-50 text-2xl"
@@ -2613,17 +2586,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/comics/chainsaw-man-volume-18-rilis-viz-20250605/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/comics/chainsaw-man-volume-18-rilis-viz-20250605/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/comics/chainsaw-man-volume-18-rilis-viz-20250605/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2649,7 +2619,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="1200" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/comics/chainsaw-man-volume-18-rilis-viz-20250605/" class="hover:underline break-words h-50 text-2xl"
@@ -2703,17 +2673,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/comics/dr-stone-volume-27-rilis-viz-20250604/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/comics/dr-stone-volume-27-rilis-viz-20250604/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/comics/dr-stone-volume-27-rilis-viz-20250604/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2739,7 +2706,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="1350" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/comics/dr-stone-volume-27-rilis-viz-20250604/" class="hover:underline break-words h-50 text-2xl"
@@ -2793,17 +2760,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/games/honkai-star-rail-cipher-interastral-entertainment-20250603/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/games/honkai-star-rail-cipher-interastral-entertainment-20250603/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/games/honkai-star-rail-cipher-interastral-entertainment-20250603/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2829,7 +2793,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/games/honkai-star-rail-cipher-interastral-entertainment-20250603/" class="hover:underline break-words h-50 text-2xl"
@@ -2882,17 +2846,14 @@
 
 <div
     class="relative flex flex-col w-full h-[360px] p-[0px]  rounded  overflow-hidden z-10">
-    <div
-        class="absolute inset-0 bg-gradient-to-br hidden from-conime-400 via-white to-conime-400 dark:from-conime-500 dark:via-gray-900 dark:to-conime-500 animate-spin delay-500 transition ease-in-out !duration-[10000s] z-0">
-    </div>
+
     <div class="label-new hidden opacity-0 w-fit h-fit transition duration-300 ease-in-out absolute left-0 top-0 z-20"
         data-url="/en/posts/movies/review-rurouni-kenshin-2012-liveaction-20250601/">
         <div
             class="absolute tracking-[.6em] lg:tracking-[.5em] -left-20 top-4 shadow-xl shadow-gray-950/20 dark:shadow-gray-950/30 w-60 bg-conime-500 dark:bg-conime-500 text-white p-2 text-xl uppercase font-light flex items-center justify-center z-20 -rotate-45">
             New</div>
     </div>
-    <div class="fire-new hidden opacity-0 absolute transition duration-300 ease-in-out right-4 top-4 z-20 bg-gray-950 dark:bg-gray-900  rounded  w-fit h-fit p-2"
-        data-url="/en/posts/movies/review-rurouni-kenshin-2012-liveaction-20250601/">
+    <div class="fire-new hidden opacity-0 absolute bg-darklight-card right-4 top-4 z-20 rounded  w-fit h-fit p-2" data-url="/en/posts/movies/review-rurouni-kenshin-2012-liveaction-20250601/">
         <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000" class="flex items-center justify-center relative" data-tippy-content="New">
             
              <svg class="svg1 opacity-0 animate-flicker origin-top w-8 h-8" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2918,7 +2879,7 @@
 
     
     <div
-        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+        class="w-full h-[55%] z-10 font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
         <h2 data-aos="fade-up" data-aos-delay="1650" data-aos-duration="2000" class="w-full h-fit line-clamp-3">
             <a href="/en/posts/movies/review-rurouni-kenshin-2012-liveaction-20250601/" class="hover:underline break-words h-50 text-2xl"
@@ -4098,7 +4059,7 @@
       
       <div class="relative group flex flex-col justify-center left-10 w-[90%] h-auto">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000"
-          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-gray-300 dark:bg-gray-900/50">
+          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-darklight-card">
 
           
           <a href="/en/posts/anime/" class="w-full h-full absolute left-4 bg-cover" >
@@ -4129,13 +4090,13 @@
           </a>
           
           <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
-            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight   bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight bg-darklight-card">
             <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-full text-2xl p-4 line-clamp-4 lg:line-clamp-4">
               <a href="/en/posts/anime/" data-tippy-content="Show all Anime" class="hover:underline uppercase break-words">
                 Anime</a>
             </h2>
             <a href="/en/posts/anime/"
-              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-gray-950 hover:dark:text-white">
+              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium">
               
               <h2
                 class="mb-4  border-b border-gray-800 dark:border-gray-400 hover:border-gray-950 hover:dark:border-white transition">
@@ -4285,7 +4246,7 @@
       
       <div class="relative group flex flex-col justify-center left-10 w-[90%] h-auto">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000"
-          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-gray-300 dark:bg-gray-900/50">
+          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-darklight-card">
 
           
           <a href="/en/posts/comics/" class="w-full h-full absolute left-4 bg-cover" >
@@ -4316,12 +4277,12 @@
           </a>
           
           <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
-            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight   bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight bg-darklight-card">
             <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-full text-2xl p-4 line-clamp-4 lg:line-clamp-4">
               <a href="/en/posts/comics/" data-tippy-content="Show all Comics" class="hover:underline uppercase break-words">Comics</a>
             </h2>
             <a href="/en/posts/comics/"
-              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-gray-950 hover:dark:text-white">
+              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium bg-darklight-card">
               
               <h2
                 class="mb-4  border-b border-gray-800 dark:border-gray-400 hover:border-gray-950 hover:dark:border-white transition">
@@ -4471,7 +4432,7 @@
       
      <div class="relative group flex flex-col justify-center left-10 w-[90%] h-auto">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000"
-          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-gray-300 dark:bg-gray-900/50">
+          class="relative flex flex-col w-full h-[360px] rounded z-10 bg-darklight-card">
 
           
           <a href="/en/posts/movies/" class="w-full h-full absolute left-4 bg-cover" >
@@ -4502,14 +4463,14 @@
           </a>
           
           <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
-            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight   bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight bg-darklight-card">
             <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-full text-2xl p-4 line-clamp-4 lg:line-clamp-4">
               <a href="/en/posts/movies/" data-tippy-content="Show all Movies" class="hover:underline uppercase break-words">
                   Movies
               </a>
             </h2>
             <a href="/en/posts/movies/"
-              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-gray-950 hover:dark:text-white">
+              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium">
               
               <h2
                 class="mb-4  border-b border-gray-800 dark:border-gray-400 hover:border-gray-950 hover:dark:border-white transition">
@@ -4659,7 +4620,7 @@
       
        <div class="relative group flex flex-col justify-center left-10 w-[90%] h-auto">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000"
-          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-gray-300 dark:bg-gray-900/50 ">
+          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-darklight-card">
 
           
           <a href="/en/posts/games/" class="w-full h-full absolute left-4 bg-cover" >
@@ -4690,14 +4651,14 @@
           </a>
           
           <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
-            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight   bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight bg-darklight-card">
             <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-full text-2xl p-4 line-clamp-4 lg:line-clamp-4">
               <a href="/en/posts/games/" data-tippy-content="Show all Games" class="hover:underline uppercase break-words">
                   Games
               </a>
             </h2>
             <a href="/en/posts/games/"
-              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-gray-950 hover:dark:text-white">
+              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium">
               
               <h2
                 class="mb-4  border-b border-gray-800 dark:border-gray-400 hover:border-gray-950 hover:dark:border-white transition">
@@ -5014,7 +4975,7 @@
       
  <div class="relative group flex flex-col justify-center left-10 w-[90%] h-auto">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="2000"
-          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-gray-300 dark:bg-gray-900/50 ">
+          class="relative flex flex-col w-full h-[360px]  rounded  z-10 bg-darklight-card">
 
           
           <a href="/en/categories/review/" class="w-full h-full absolute left-4 bg-cover" >
@@ -5045,14 +5006,14 @@
           </a>
           
           <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
-            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight   bg-gray-200 hover:bg-gray-300 dark:bg-gray-900 hover:dark:bg-gray-800">
+            class="w-full h-[55%] absolute z-10 flex flex-col justify-between bottom-0 -left-8 right-8  rounded -t-[32px] font-light dark:font-extralight bg-darklight-card">
             <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000" class="w-full h-full text-2xl p-4 line-clamp-4 lg:line-clamp-4">
               <a href="/en/categories/review/" data-tippy-content="Show all Review" class="hover:underline uppercase break-words">
                   Review
               </a>
             </h2>
             <a href="/en/categories/review/"
-              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-gray-950 hover:dark:text-white">
+              class="flex flex-col group items-end justify-end gap-2 w-full h-fit px-4 py-0  text-sm font-medium">
               
               <h2
                 class="mb-4  border-b border-gray-800 dark:border-gray-400 hover:border-gray-950 hover:dark:border-white transition">
@@ -5086,9 +5047,9 @@
 
 
   <footer
-  class="pb-[env(safe-area-inset-bottom)] text-sm ml-0 sm:ml-auto mx-auto lg:ml-[20%] xl:ml-[15%] mt-12 sm:mt-6  block relative text-gray-900 dark:text-gray-100 transition duration-300 ease-in-out px-4 sm:px-6 lg:px-12">
+  class="pb-[env(safe-area-inset-bottom)] text-sm ml-0 sm:ml-auto mx-auto lg:ml-[20%] xl:ml-[15%] mt-12 sm:mt-6  block relative  px-4 sm:px-6 bg-darklight lg:px-12">
 
-  <div class="z-10 border-t border-conime-500 dark:border-conime-500 pt-6 sm:pt-6">
+  <div class="z-10 border-t border-conime-500 dark:border-conime-500 px-2 pt-6 sm:pt-6">
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-2">
 
@@ -5933,7 +5894,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   container.innerHTML = posts.map((post, i) => `
     <ul class="relative group flex flex-col justify-center w-full h-auto">
       <li data-aos="fade-up" data-aos-delay="${i * 200}" data-aos-duration="2000"
-          class="relative popular-html flex flex-col w-full h-full bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800/20 overflow-hidden  rounded   transition duration-300 ease-in-out">
+          class="relative popular-html popular-umami flex flex-col w-full h-full bg-darklight-card overflow-hidden  rounded">
 
         <a href="${post.url}" class="bg-cover w-full h-full overflow-hidden transition duration-500 ease-in-out">
           <img loading="lazy" src="${post.image}" alt="Gambar ${escapeHtmlAttr(post.title)}"
@@ -5941,7 +5902,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         </a>
 
         <div data-aos="fade-up" data-aos-delay="${i * 200}" data-aos-duration="2000"
-             class="w-full lg:w-[70%] h-[60%] lg:h-[70%] group absolute bottom-0 left-0  rounded -tr transition duration-500 ease-in-out font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-gray-200 dark:bg-gray-900 hover:bg-gray-300 hover:dark:bg-gray-800">
+             class="w-full lg:w-[70%] h-[60%] lg:h-[70%] group absolute bottom-0 left-0  rounded-tr font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
 
           <h2 class="w-fit inline-block lg:hidden"> —0${i + 1}</h2>
           <h2 class="w-[80%] lg:w-full h-fit title-popular line-clamp-3 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
