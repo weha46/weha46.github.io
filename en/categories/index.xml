@@ -37,6 +37,13 @@
       <description></description>
     </item>
     <item>
+      <title>News</title>
+      <link>http://localhost:1313/en/categories/news/</link>
+      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/categories/news/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Review</title>
       <link>http://localhost:1313/en/categories/review/</link>
       <pubDate>Thu, 26 Jun 2025 17:22:00 +0700</pubDate>

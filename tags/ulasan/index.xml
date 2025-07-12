@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Review on CoNime</title>
-    <link>http://localhost:1313/tags/review/</link>
-    <description>Recent content in Review on CoNime</description>
+    <title>Ulasan on CoNime</title>
+    <link>http://localhost:1313/tags/ulasan/</link>
+    <description>Recent content in Ulasan on CoNime</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
     <lastBuildDate>Thu, 26 Jun 2025 17:22:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ulasan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review Belle: Keajaiban Suara, Visual, dan Emosi di Dunia Virtual</title>
       <link>http://localhost:1313/posts/anime/review-belle-anime-20250611/</link>

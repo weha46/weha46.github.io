@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Anime on CoNime</title>
+    <link>http://localhost:1313/en/tags/new-anime/</link>
+    <description>Recent content in New Anime on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 30 Jun 2025 10:30:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/new-anime/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Boku no Hero Academia: Vigilantes Announces Anime Season 2 for 2026</title>
+      <link>http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/</link>
+      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/</guid>
+      <description>Boku no Hero Academia: Vigilantes officially confirms its Season 2 anime for 2026. The announcement came with a new teaser visual and official production video shared by the series&amp;rsquo; X account and TOHO animation.</description>
+    </item>
+  </channel>
+</rss>

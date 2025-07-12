@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>All Posts on CoNime</title>
+    <title>All Articles on CoNime</title>
     <link>http://localhost:1313/en/posts/</link>
-    <description>Recent content in All Posts on CoNime</description>
+    <description>Recent content in All Articles on CoNime</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate></lastBuildDate>

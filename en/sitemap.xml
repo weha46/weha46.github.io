@@ -561,6 +561,32 @@
                 href="http://localhost:1313/en/posts/anime/kimetsu-no-yaiba-infinity-castle-film-trailer-20250630/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/tags/boku-no-hero-academia/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/boku-no-hero-academia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/boku-no-hero-academia/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/tags/bones/</loc>
     <lastmod>2025-06-30T10:30:00+07:00</lastmod>
     <xhtml:link
@@ -587,31 +613,14 @@
                 href="http://localhost:1313/en/tags/crunchyroll/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/my-hero-academia/</loc>
+    <loc>http://localhost:1313/en/tags/new-anime/</loc>
     <lastmod>2025-06-30T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/my-hero-academia/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/my-hero-academia/"
-                />
   </url><url>
-    <loc>http://localhost:1313/en/posts/anime/my-hero-academia-vigilantes-season-2-20250630/</loc>
+    <loc>http://localhost:1313/en/categories/news/</loc>
     <lastmod>2025-06-30T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/anime/my-hero-academia-vigilantes-season-2-20250630/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/my-hero-academia-vigilantes-season-2-20250630/"
-                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/upcoming-anime/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/en/tags/vigilantes/</loc>
     <lastmod>2025-06-30T10:30:00+07:00</lastmod>
@@ -784,29 +793,9 @@
   </url><url>
     <loc>http://localhost:1313/en/tags/review/</loc>
     <lastmod>2025-06-26T17:22:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/review/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/review/"
-                />
   </url><url>
     <loc>http://localhost:1313/en/categories/review/</loc>
     <lastmod>2025-06-26T17:22:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/review/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/review/"
-                />
   </url><url>
     <loc>http://localhost:1313/en/posts/anime/review-belle-anime-20250611/</loc>
     <lastmod>2025-06-26T17:22:00+07:00</lastmod>

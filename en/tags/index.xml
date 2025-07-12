@@ -198,6 +198,13 @@
       <description></description>
     </item>
     <item>
+      <title>Boku No Hero Academia</title>
+      <link>http://localhost:1313/en/tags/boku-no-hero-academia/</link>
+      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/boku-no-hero-academia/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Bones</title>
       <link>http://localhost:1313/en/tags/bones/</link>
       <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
@@ -212,10 +219,17 @@
       <description></description>
     </item>
     <item>
-      <title>My Hero Academia</title>
-      <link>http://localhost:1313/en/tags/my-hero-academia/</link>
+      <title>New Anime</title>
+      <link>http://localhost:1313/en/tags/new-anime/</link>
       <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/my-hero-academia/</guid>
+      <guid>http://localhost:1313/en/tags/new-anime/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Upcoming Anime</title>
+      <link>http://localhost:1313/en/tags/upcoming-anime/</link>
+      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/upcoming-anime/</guid>
       <description></description>
     </item>
     <item>

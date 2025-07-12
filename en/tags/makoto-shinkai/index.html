@@ -114,7 +114,7 @@
     class="w-full z-[1000] min-h-12 max-h-20 h-20 flex fixed left-0 top-0 right-0 bg-darklight px-6 sm:24 lg:px-[15%] py-2 lg:py-4 flex-row justify-between items-center">
     
 
-<a href="/" 
+<a href="/en/" 
   data-tippy-content="Logo CoNime" class="flex relative items-center group">
   <div class="flex sm:hidden"> <svg class="w-auto h-12 flex dark:hidden" viewBox="0 0 336 336" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +153,7 @@
       fill="currentColor" />
   </svg>
   <span
-    class="absolute left-1/2 -translate-x-1/2 min-w-20 w-fit top-12 p-2 text-xs bg-gray-200 dark:bg-gray-900/50 backdrop-blur-sm text-gray-800 dark:text-gray-400 opacity-0 group-hover:opacity-0 transition delay-100  duration-500 ease-in-out  rounded -2xl group-hover: rounded  hidden md:flex items-center justify-center">
+    class="absolute left-1/2 -translate-x-1/2 min-w-20 w-fit top-12 p-2 text-xs bg-gray-200 dark:bg-gray-900/50 backdrop-blur-sm text-gray-800 dark:text-gray-400 opacity-0 group-hover:opacity-0 transition delay-100  duration-500 ease-in-out   group-hover: rounded  hidden md:flex items-center justify-center">
     CoNime
   </span>
 </a>
@@ -235,12 +235,14 @@
   <ul class="flex space-x-2">
     
     <li class="w-fit h-fit flex items-center justify-center p-2 overflow-hidden bg-cover">
-      <a href="/tags/makoto-shinkai/" class="w-fit h-fit flex items-center justify-center">
+      <a href="/tags/makoto-shinkai/" class="w-fit h-fit flex gap-2 items-center justify-center">
         
         
-        <img src="/images/icons/id.webp" alt="Bendera Indonesia" class="w-6 h-4  rounded  hover:scale-110 transition delay-100 duration-500 ease-in-out md:w-6 md:h-6 object-cover">
+        <img src="/images/icons/id.webp" alt="Bendera Indonesia" class="w-6 h-4  rounded  hover:scale-110 transition delay-100 duration-500 ease-in-out object-cover">
+        <span>ID</span>
         
       </a>
+
     </li>
     
   </ul>
@@ -546,7 +548,7 @@
 
 
 <div id="mobileMenuModal" class="fixed inset-0 bg-black/80 w-full h-full scale-95 hidden -z-[999] opacity-0 translate-y-10 transition-all justify-center items-end duration-300 ease-out pb-16 lg:hidden">
-  <div id="mobile-modal-container" class="relative opacity-100 bg-darklight-card w-[90%] border border-gray-300 dark:border-gray-800/50  rounded  p-4">
+  <div id="mobile-modal-container" class="relative opacity-100 bg-darklight-card hover:!bg-inherit w-[90%] border border-gray-300 dark:border-gray-800/50  rounded  p-4">
     <div id="btnCloseMobileMenu" class="closeMobileMenu w-fit h-fit group absolute right-2 top-2 p-0 flex gap-x-2 justify-center items-center shadow-none md:shadow-xl shadow-gray-950/10 lg:shadow-gray-950/20 bg-darklight-card rounded-full">
       <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.16998 14.83L14.83 9.17004" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -956,7 +958,7 @@
 
 
 <div id="notifModal"
-  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]  bg-darklight-card  border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
+  class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]  bg-darklight-modal  border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
   <div
     class="w-fit h-fit closeModal group absolute right-4 top-4 p-0 flex gap-x-2 justify-center items-center bg-darklight-card rounded-full">
     <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
@@ -976,8 +978,41 @@
 
   </div>
 
-  <div class="notif-container flex flex-col gap-4 overflow-y-auto overflow-style-custom-y max-h-[300px] px-2 my-6">
+  <div class="notif-container font-normal flex flex-col gap-4 overflow-y-auto overflow-style-custom-y max-h-[300px] px-2 my-6">
     
+  </div>
+</div>
+
+
+<div id="notifModalAuto"
+ class="fixed left-1/2 -translate-x-1/2  lg:mx-4 lg:!left-[100%] xl:!left-[100%] lg:!transform lg:translate-x-0 bottom-16 lg:-bottom-16 -z-[999]  bg-darklight-modal border border-gray-300 dark:border-gray-800/50 p-6 rounded-2xl w-[320px] md:w-[440px] scale-95 opacity-0 translate-y-10">
+  <div
+    class="w-fit h-fit closeModal group absolute right-4 top-4 p-0 flex gap-x-2 justify-center items-center bg-darklight-card rounded-full">
+    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
+      <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+
+  <div class="flex pr-12 justify-between items-center mb-4">
+    <h3 class="text-md font-medium">Notification</h3>
+   <div class="hidden gap-3 items-center cursor-pointer mark-all-read">
+  <span id="textMark" class="text-sm hidden md:inline" >Mark all as read</span>
+  <div id="toggleTrack" class="w-12 h-6 bg-gray-300 dark:bg-gray-950/30 z-10 rounded-full flex items-center justify-center px-1  transition-all duration-500 easy-in-out">
+    <div id="toggleBall" class="w-4 mx-1 h-4 -translate-x-[85%] rounded-full bg-conime-500 dark:bg-conime-500 transition duration-300 easy-in-out"></div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="notif-container2 font-normal flex flex-col gap-4 overflow-y-auto overflow-style-custom-y max-h-[300px] px-2 my-6">
+    
+    
+    <h2 class="text-lg font-bold">Welcome to CoNime!</h2>
+    <p class="text-sm text-gray-600 dark:text-gray-300">
+      We're so glad to have you here. Explore your favorite anime, comics, movies, and games with us!
+    </p>
+  
   </div>
 </div>
 
@@ -1108,87 +1143,12 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-
-    
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/</p>
-    
+   
+  
+  
   
 
+  
   
   
 
@@ -1196,84 +1156,147 @@
   
   
 
+  
+  
+  
     
-      
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  
 
-    
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/anime/rooster-fighter-anime-trailer-20250707/</p>
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
@@ -1284,87 +1307,23 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+   
+  
+  
+  
 
+  
+  
+  
     
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/</p>
     
   
 
+  
+  
+  
+
+  
   
   
 
@@ -1372,84 +1331,136 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  
+  
+  
 
-    
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/movies/review-rurouni-kenshin-2012-liveaction-20250601/</p>
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
@@ -1460,87 +1471,12 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-
-    
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/anime/kimetsu-no-yaiba-infinity-castle-film-trailer-20250630/</p>
-    
+   
+  
+  
   
 
+  
   
   
 
@@ -1548,84 +1484,147 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  
+  
+  
 
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
     
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/movies/fantastic-four-first-steps-main-theme-20250606/</p>
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
@@ -1636,6 +1635,12 @@
   
   
 
+   
+  
+  
+  
+
+  
   
   
 
@@ -1643,87 +1648,11 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-
-    
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/anime/dandadan-season-2-trailer-jadwal-20250601/</p>
-    
+  
+  
   
 
+  
   
   
 
@@ -1731,84 +1660,135 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  
+  
+  
 
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
     
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/anime/kaiju-no-8-season-2-teaser-gen-narumi-20250324/</p>
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
@@ -1819,6 +1799,662 @@
   
   
 
+   
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+    
+  
+
+  
+  
+
+  
+  
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+    
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+    
+  
+
+  
+  
+
+  
+  
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
+    
+  
+
   
   
 
@@ -1875,84 +2511,167 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+  
+  
 
+  
+  
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
     
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/comics/kaiju-no-8-volume-13-rilis-viz-20250604/</p>
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
@@ -1963,90 +2682,287 @@
   
   
 
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+   
+  
+  
+  
 
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
     
-      <p class="text-red-500 text-sm">⚠️ Tidak ketemu di Hugo: /posts/movies/dc-superman-trailer-breakdown-20250520/</p>
+    
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+
+
     
   
 
 
 
 
+
+<div class="w-full h-fit">
+  <h2 class="text-xl uppercase tracking-[.3em] lg:tracking-[.3em] border-b border-gray-300 dark:border-gray-800/50 pb-2 mb-4">
+    Popular Articles
+  </h2>
+
+  <div id="popular-container" data-title-size="text-xl" class="flex flex-col gap-4">
+    
+      <li class="relative popular-html flex flex-col col-span-2 w-full h-full bg-darklight-card overflow-hidden  rounded">
+        <a href="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/" class="bg-cover w-full h-full overflow-hidden transition duration-500 ease-in-out">
+          
+            <img loading="lazy" src="/images/anime/kaoru-hana-official-visual.webp" alt="Gambar Kaoru Hana wa Rin to Saku Umumkan Teaser PV dan Visual Terbaru" class="w-full h-[360px] object-cover  rounded -t brightness-75 hover:brightness-100 transition duration-300 ease-in-out" />
+          
+        </a>
+
+        
+        <div class="w-full lg:w-[70%] h-[60%] lg:h-[70%] group absolute bottom-0 left-0  rounded-tr font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
+          <h2 class="w-fit inline-block lg:hidden"> —01</h2>
+          <h2 class="w-[80%] lg:w-full h-fit title-popular text-xl line-clamp-3 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <a href="/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/" class="hover:underline break-words" data-tippy-content="Kaoru Hana wa Rin to Saku Umumkan Teaser PV dan Visual Terbaru">Kaoru Hana wa Rin to Saku Umumkan Teaser PV dan Visual Terbaru</a>
+          </h2>
+          <h2 class="flex justify-between opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out gap-4 text-sm line-clamp-1 uppercase">
+            
+              <a href="/en/categories/berita" class="hover:underline">
+                Berita
+              </a>
+            
+              <a href="/en/categories/anime" class="hover:underline">
+                Anime
+              </a>
+            
+          </h2>
+          <p class="bottom-4 items-end justify-end w-full left-6 z-10 text-xl h-full flex-1 flex gap-0 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <span>—</span>
+
+<time class="font-light dark:font-extralight text-xl uppercase" datetime="2025-07-01T22:20:00&#43;07:00">
+  01.07.2025
+</time>
+          </p>
+          <h2 class="absolute inset-0 text-gray-400 dark:text-gray-800 text-5xl w-1 h-1 lg:w-full lg:h-full flex items-center justify-center font-bold opacity-0 lg:opacity-100 dark:lg:opacity-100 group-hover:lg:opacity-0 group-hover:-z-10 transition duration-500 ease-in-out">
+            #1
+          </h2>
+        </div>
+      </li>
+    
+      <li class="relative popular-html flex flex-col col-span-2 w-full h-full bg-darklight-card overflow-hidden  rounded">
+        <a href="/en/posts/anime/rooster-fighter-anime-trailer-20250707/" class="bg-cover w-full h-full overflow-hidden transition duration-500 ease-in-out">
+          
+            <img loading="lazy" src="/images/anime/rooster-fighter-anime-teaser.webp" alt="Gambar Rooster Fighter Resmi Umumkan Adaptasi Anime dan Trailer Perdana" class="w-full h-[360px] object-cover  rounded -t brightness-75 hover:brightness-100 transition duration-300 ease-in-out" />
+          
+        </a>
+
+        
+        <div class="w-full lg:w-[70%] h-[60%] lg:h-[70%] group absolute bottom-0 left-0  rounded-tr font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
+          <h2 class="w-fit inline-block lg:hidden"> —02</h2>
+          <h2 class="w-[80%] lg:w-full h-fit title-popular text-xl line-clamp-3 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <a href="/en/posts/anime/rooster-fighter-anime-trailer-20250707/" class="hover:underline break-words" data-tippy-content="Rooster Fighter Resmi Umumkan Adaptasi Anime dan Trailer Perdana">Rooster Fighter Resmi Umumkan Adaptasi Anime dan Trailer Perdana</a>
+          </h2>
+          <h2 class="flex justify-between opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out gap-4 text-sm line-clamp-1 uppercase">
+            
+              <a href="/en/categories/berita" class="hover:underline">
+                Berita
+              </a>
+            
+              <a href="/en/categories/anime" class="hover:underline">
+                Anime
+              </a>
+            
+          </h2>
+          <p class="bottom-4 items-end justify-end w-full left-6 z-10 text-xl h-full flex-1 flex gap-0 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <span>—</span>
+
+<time class="font-light dark:font-extralight text-xl uppercase" datetime="2025-07-07T20:00:00&#43;07:00">
+  07.07.2025
+</time>
+          </p>
+          <h2 class="absolute inset-0 text-gray-400 dark:text-gray-800 text-5xl w-1 h-1 lg:w-full lg:h-full flex items-center justify-center font-bold opacity-0 lg:opacity-100 dark:lg:opacity-100 group-hover:lg:opacity-0 group-hover:-z-10 transition duration-500 ease-in-out">
+            #2
+          </h2>
+        </div>
+      </li>
+    
+      <li class="relative popular-html flex flex-col col-span-2 w-full h-full bg-darklight-card overflow-hidden  rounded">
+        <a href="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/" class="bg-cover w-full h-full overflow-hidden transition duration-500 ease-in-out">
+          
+            <img loading="lazy" src="/images/games/mlbb-wu-zetian.webp" alt="Gambar Mobile Legends: Bang Bang Hadirkan Hero Baru Wu Zetian, Sang Phoenix Empress" class="w-full h-[360px] object-cover  rounded -t brightness-75 hover:brightness-100 transition duration-300 ease-in-out" />
+          
+        </a>
+
+        
+        <div class="w-full lg:w-[70%] h-[60%] lg:h-[70%] group absolute bottom-0 left-0  rounded-tr font-light dark:font-extralight flex flex-col items-start justify-start gap-2 p-4 bg-darklight-card">
+          <h2 class="w-fit inline-block lg:hidden"> —03</h2>
+          <h2 class="w-[80%] lg:w-full h-fit title-popular text-xl line-clamp-3 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <a href="/en/posts/games/mlbb-hero-wu-zetian-phoenix-empress-20250613/" class="hover:underline break-words" data-tippy-content="Mobile Legends: Bang Bang Hadirkan Hero Baru Wu Zetian, Sang Phoenix Empress">Mobile Legends: Bang Bang Hadirkan Hero Baru Wu Zetian, Sang Phoenix Empress</a>
+          </h2>
+          <h2 class="flex justify-between opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out gap-4 text-sm line-clamp-1 uppercase">
+            
+              <a href="/en/categories/berita" class="hover:underline">
+                Berita
+              </a>
+            
+              <a href="/en/categories/game" class="hover:underline">
+                Game
+              </a>
+            
+          </h2>
+          <p class="bottom-4 items-end justify-end w-full left-6 z-10 text-xl h-full flex-1 flex gap-0 opacity-100 lg:opacity-0 group-hover:lg:opacity-100 group-hover:z-10 transition duration-500 ease-in-out">
+            <span>—</span>
+
+<time class="font-light dark:font-extralight text-xl uppercase" datetime="2025-06-13T17:20:00&#43;07:00">
+  13.06.2025
+</time>
+          </p>
+          <h2 class="absolute inset-0 text-gray-400 dark:text-gray-800 text-5xl w-1 h-1 lg:w-full lg:h-full flex items-center justify-center font-bold opacity-0 lg:opacity-100 dark:lg:opacity-100 group-hover:lg:opacity-0 group-hover:-z-10 transition duration-500 ease-in-out">
+            #3
+          </h2>
+        </div>
+      </li>
+    
+  </div>
+</div>
 
 
 
@@ -2242,7 +3158,7 @@
     <li class="mb-2">
       <a href="/en/categories/berita"
         class="capitalize px-2 py-1 text-conime-400 dark:text-conime-500 bg-conime-100 dark:bg-gray-900/20  rounded  hover:underline text-lg font-light dark:font-extralight transition duration-300 ease-in-out">
-        berita (28)
+        berita (27)
       </a>
     </li>
     
@@ -2282,6 +3198,13 @@
     </li>
     
     <li class="mb-2">
+      <a href="/en/categories/news"
+        class="capitalize px-2 py-1 text-conime-400 dark:text-conime-500 bg-conime-100 dark:bg-gray-900/20  rounded  hover:underline text-lg font-light dark:font-extralight transition duration-300 ease-in-out">
+        news (1)
+      </a>
+    </li>
+    
+    <li class="mb-2">
       <a href="/en/categories/review"
         class="capitalize px-2 py-1 text-conime-400 dark:text-conime-500 bg-conime-100 dark:bg-gray-900/20  rounded  hover:underline text-lg font-light dark:font-extralight transition duration-300 ease-in-out">
         review (4)
@@ -2306,7 +3229,7 @@
     <li class="mb-2">
       <a href="/en/tags/anime-baru"
         class="capitalize px-2 py-1 text-conime-400 dark:text-conime-500 bg-conime-100 dark:bg-gray-900/20  rounded  hover:underline text-lg font-light dark:font-extralight transition duration-300 ease-in-out">
-        anime baru (11)
+        anime baru (10)
       </a>
     </li>
     
@@ -2320,7 +3243,7 @@
     <li class="mb-2">
       <a href="/en/tags/anime-musim-mendatang"
         class="capitalize px-2 py-1 text-conime-400 dark:text-conime-500 bg-conime-100 dark:bg-gray-900/20  rounded  hover:underline text-lg font-light dark:font-extralight transition duration-300 ease-in-out">
-        anime musim mendatang (6)
+        anime musim mendatang (5)
       </a>
     </li>
     
@@ -2562,8 +3485,8 @@
     
     
     <div class="post-notif hidden"
-         data-title="My Hero Academia: Vigilantes Umumkan Anime Season 2 Tayang 2026"
-         data-url="/en/posts/anime/my-hero-academia-vigilantes-season-2-20250630/"
+         data-title="Boku no Hero Academia: Vigilantes Announces Anime Season 2 for 2026"
+         data-url="/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/"
          data-date="2025-06-30T10:30:00&#43;07:00">
     </div>
   
@@ -2869,6 +3792,11 @@
 
 
   
+  <script src="/js/notif-auto.min.js" defer></script>
+
+
+
+  
   <script src="/js/last-view.min.js" defer></script>
 
 
@@ -2955,11 +3883,11 @@
     "date": "2025-06-30"
   },
   {
-    "url": "\/en\/posts\/anime\/my-hero-academia-vigilantes-season-2-20250630\/",
-    "permalink": "\/en\/posts\/anime\/my-hero-academia-vigilantes-season-2-20250630\/",
-    "title": "\"My Hero Academia: Vigilantes Umumkan Anime Season 2 Tayang 2026\"",
+    "url": "\/en\/posts\/anime\/boku-no-hero-academia-vigilantes-season-2-20250630-en\/",
+    "permalink": "\/en\/posts\/anime\/boku-no-hero-academia-vigilantes-season-2-20250630-en\/",
+    "title": "\"Boku no Hero Academia: Vigilantes Announces Anime Season 2 for 2026\"",
     "image": "\/images\/anime\/vigilantes-season2-teaser.webp",
-    "categories": "[\"Berita\",\"Anime\"]",
+    "categories": "[\"News\",\"Anime\"]",
     "date": "2025-06-30"
   },
   {
