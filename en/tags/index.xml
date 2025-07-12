@@ -93,6 +93,13 @@
       <description></description>
     </item>
     <item>
+      <title>New Anime</title>
+      <link>http://localhost:1313/en/tags/new-anime/</link>
+      <pubDate>Mon, 07 Jul 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/new-anime/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Studio Bind</title>
       <link>http://localhost:1313/en/tags/studio-bind/</link>
       <pubDate>Mon, 07 Jul 2025 08:00:00 +0700</pubDate>
@@ -100,10 +107,10 @@
       <description></description>
     </item>
     <item>
-      <title>Anime Musim Panas</title>
-      <link>http://localhost:1313/en/tags/anime-musim-panas/</link>
-      <pubDate>Tue, 01 Jul 2025 22:20:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/anime-musim-panas/</guid>
+      <title>Upcoming Anime</title>
+      <link>http://localhost:1313/en/tags/upcoming-anime/</link>
+      <pubDate>Mon, 07 Jul 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/upcoming-anime/</guid>
       <description></description>
     </item>
     <item>
@@ -128,6 +135,13 @@
       <description></description>
     </item>
     <item>
+      <title>Summer Anime</title>
+      <link>http://localhost:1313/en/tags/summer-anime/</link>
+      <pubDate>Tue, 01 Jul 2025 22:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/summer-anime/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Trailer</title>
       <link>http://localhost:1313/en/tags/trailer/</link>
       <pubDate>Tue, 01 Jul 2025 22:20:00 +0700</pubDate>
@@ -135,17 +149,10 @@
       <description></description>
     </item>
     <item>
-      <title>Anime Summer 2025</title>
-      <link>http://localhost:1313/en/tags/anime-summer-2025/</link>
+      <title>Anime News</title>
+      <link>http://localhost:1313/en/tags/anime-news/</link>
       <pubDate>Tue, 01 Jul 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/anime-summer-2025/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Berita Anime</title>
-      <link>http://localhost:1313/en/tags/berita-anime/</link>
-      <pubDate>Tue, 01 Jul 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/berita-anime/</guid>
+      <guid>http://localhost:1313/en/tags/anime-news/</guid>
       <description></description>
     </item>
     <item>
@@ -160,6 +167,13 @@
       <link>http://localhost:1313/en/tags/jigoku-sensei-nube/</link>
       <pubDate>Tue, 01 Jul 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/jigoku-sensei-nube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Summer 2025 Anime</title>
+      <link>http://localhost:1313/en/tags/summer-2025-anime/</link>
+      <pubDate>Tue, 01 Jul 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/summer-2025-anime/</guid>
       <description></description>
     </item>
     <item>
@@ -219,31 +233,10 @@
       <description></description>
     </item>
     <item>
-      <title>New Anime</title>
-      <link>http://localhost:1313/en/tags/new-anime/</link>
-      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/new-anime/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Upcoming Anime</title>
-      <link>http://localhost:1313/en/tags/upcoming-anime/</link>
-      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/upcoming-anime/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Vigilantes</title>
       <link>http://localhost:1313/en/tags/vigilantes/</link>
       <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/vigilantes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Anime Musim Panas 2025</title>
-      <link>http://localhost:1313/en/tags/anime-musim-panas-2025/</link>
-      <pubDate>Mon, 30 Jun 2025 09:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/anime-musim-panas-2025/</guid>
       <description></description>
     </item>
     <item>
@@ -261,17 +254,17 @@
       <description></description>
     </item>
     <item>
+      <title>Global Screenings</title>
+      <link>http://localhost:1313/en/tags/global-screenings/</link>
+      <pubDate>Mon, 30 Jun 2025 09:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/global-screenings/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Paledusk</title>
       <link>http://localhost:1313/en/tags/paledusk/</link>
       <pubDate>Mon, 30 Jun 2025 09:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/paledusk/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pemutaran Global</title>
-      <link>http://localhost:1313/en/tags/pemutaran-global/</link>
-      <pubDate>Mon, 30 Jun 2025 09:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/pemutaran-global/</guid>
       <description></description>
     </item>
     <item>
@@ -338,6 +331,20 @@
       <description></description>
     </item>
     <item>
+      <title>Animated Film</title>
+      <link>http://localhost:1313/en/tags/animated-film/</link>
+      <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/animated-film/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Announcement</title>
+      <link>http://localhost:1313/en/tags/announcement/</link>
+      <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/announcement/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Child of the Sea</title>
       <link>http://localhost:1313/en/tags/child-of-the-sea/</link>
       <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
@@ -359,24 +366,10 @@
       <description></description>
     </item>
     <item>
-      <title>Film Animasi</title>
-      <link>http://localhost:1313/en/tags/film-animasi/</link>
-      <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/film-animasi/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>N-Lite</title>
       <link>http://localhost:1313/en/tags/n-lite/</link>
       <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/n-lite/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pengumuman</title>
-      <link>http://localhost:1313/en/tags/pengumuman/</link>
-      <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/pengumuman/</guid>
       <description></description>
     </item>
     <item>
@@ -485,10 +478,17 @@
       <description></description>
     </item>
     <item>
-      <title>Fantasi</title>
-      <link>http://localhost:1313/en/tags/fantasi/</link>
+      <title>Anime Review</title>
+      <link>http://localhost:1313/en/tags/anime-review/</link>
       <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/fantasi/</guid>
+      <guid>http://localhost:1313/en/tags/anime-review/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fantasy</title>
+      <link>http://localhost:1313/en/tags/fantasy/</link>
+      <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/fantasy/</guid>
       <description></description>
     </item>
     <item>
@@ -503,13 +503,6 @@
       <link>http://localhost:1313/en/tags/mitsue-yamazaki/</link>
       <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/mitsue-yamazaki/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Review Anime</title>
-      <link>http://localhost:1313/en/tags/review-anime/</link>
-      <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
-      <guid>http://localhost:1313/en/tags/review-anime/</guid>
       <description></description>
     </item>
     <item>
@@ -727,6 +720,13 @@
       <link>http://localhost:1313/en/tags/dr.-stone/</link>
       <pubDate>Wed, 04 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/dr.-stone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fantasi</title>
+      <link>http://localhost:1313/en/tags/fantasi/</link>
+      <pubDate>Wed, 04 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/fantasi/</guid>
       <description></description>
     </item>
     <item>
@@ -982,6 +982,13 @@
       <description></description>
     </item>
     <item>
+      <title>Berita Anime</title>
+      <link>http://localhost:1313/en/tags/berita-anime/</link>
+      <pubDate>Tue, 03 Dec 2024 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/berita-anime/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Film Musikal</title>
       <link>http://localhost:1313/en/tags/film-musikal/</link>
       <pubDate>Tue, 03 Dec 2024 08:00:00 +0700</pubDate>
@@ -993,6 +1000,13 @@
       <link>http://localhost:1313/en/tags/toritsukare-otoko/</link>
       <pubDate>Tue, 03 Dec 2024 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/tags/toritsukare-otoko/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anime Adaptation</title>
+      <link>http://localhost:1313/en/tags/anime-adaptation/</link>
+      <pubDate>Tue, 03 Dec 2024 06:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/tags/anime-adaptation/</guid>
       <description></description>
     </item>
     <item>

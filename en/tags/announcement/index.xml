@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcement on CoNime</title>
+    <link>http://localhost:1313/en/tags/announcement/</link>
+    <description>Recent content in Announcement on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 26 Jun 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/announcement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>N-Lite Announces Original Animated Film Chiure: Child of the Sea for 2026</title>
+      <link>http://localhost:1313/en/posts/anime/chiure-child-of-the-sea-announcement-20250626-en/</link>
+      <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/anime/chiure-child-of-the-sea-announcement-20250626-en/</guid>
+      <description>Studio N-Lite has officially announced its original animated film Chiure: Child of the Sea, directed and written by Daisuke Igarashi. Set for release in Japan in 2026, the film features a surreal, fantasy-themed teaser visual.</description>
+    </item>
+  </channel>
+</rss>

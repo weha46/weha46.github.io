@@ -6,15 +6,8 @@
     <description>Recent content in Anime on CoNime</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
-    <lastBuildDate>Sat, 12 Jul 2025 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jul 2025 20:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/anime/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Boku no Hero Academia: Vigilantes Umumkan Anime Season 2 Tayang 2026</title>
-      <link>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</link>
-      <pubDate>Sat, 12 Jul 2025 10:30:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</guid>
-      <description>Anime Boku no Hero Academia: Vigilantes resmi mengumumkan Season 2 yang akan tayang pada 2026. Pengumuman disertai perilisan teaser visual dan video produksi dari akun resmi di X dan TOHO animation.</description>
-    </item>
     <item>
       <title>Rooster Fighter Resmi Umumkan Adaptasi Anime dan Trailer Perdana</title>
       <link>http://localhost:1313/posts/anime/rooster-fighter-anime-trailer-20250707/</link>
@@ -51,6 +44,13 @@
       <description>Aniplex dan Ufotable merilis trailer utama untuk trilogi film &amp;lsquo;Demon Slayer: Kimetsu no Yaiba – Infinity Castle&amp;rsquo;, menampilkan pertarungan terakhir melawan Kibutsuji Muzan yang dijadwalkan rilis mulai 2025.</description>
     </item>
     <item>
+      <title>Boku no Hero Academia: Vigilantes Umumkan Anime Season 2 Tayang 2026</title>
+      <link>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</link>
+      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</guid>
+      <description>Anime Boku no Hero Academia: Vigilantes resmi mengumumkan Season 2 yang akan tayang pada 2026. Pengumuman disertai perilisan teaser visual dan video produksi dari akun resmi di X dan TOHO animation.</description>
+    </item>
+    <item>
       <title>Gachiakuta Umumkan Penayangan Perdana Global, Lagu Tema, dan Karakter Baru Jelang Tayang 6 Juli</title>
       <link>http://localhost:1313/posts/anime/anime-gachiakuta-penayangan-global-lagu-tema-karakter-baru-20250630/</link>
       <pubDate>Mon, 30 Jun 2025 09:00:00 +0700</pubDate>
@@ -58,11 +58,11 @@
       <description>Anime Gachiakuta akan tayang 6 Juli 2025. PV utama, lagu tema oleh Paledusk dan DUSTCELL, serta pemutaran global di 15 negara telah diumumkan.</description>
     </item>
     <item>
-      <title>Hell’s Paradise (Jigokuraku) Season 2 Umumkan Jadwal Tayang Januari 2026</title>
-      <link>http://localhost:1313/posts/anime/hells-paradise-season-2-januari-2026-20250630/</link>
+      <title>Jigokuraku (Hell’s Paradise) Season 2 Umumkan Jadwal Tayang Januari 2026</title>
+      <link>http://localhost:1313/posts/anime/jigokuraku-season-2-januari-2026-20250630/</link>
       <pubDate>Mon, 30 Jun 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/posts/anime/hells-paradise-season-2-januari-2026-20250630/</guid>
-      <description>Hell’s Paradise (Jigokuraku) resmi memastikan Season 2 tayang Januari 2026. Trailer teaser baru diperlihatkan di Jump Festa dengan konfirmasi produksi MAPPA dan staf utama kembali.</description>
+      <guid>http://localhost:1313/posts/anime/jigokuraku-season-2-januari-2026-20250630/</guid>
+      <description>Jigokuraku resmi memastikan Season 2 tayang Januari 2026. Trailer teaser baru dipamerkan di Jump Festa dengan konfirmasi produksi MAPPA dan kembalinya staf utama.</description>
     </item>
     <item>
       <title>Review Belle: Keajaiban Suara, Visual, dan Emosi di Dunia Virtual</title>
@@ -76,7 +76,7 @@
       <link>http://localhost:1313/posts/anime/chiure-child-of-the-sea-announcement-20250626/</link>
       <pubDate>Thu, 26 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/anime/chiure-child-of-the-sea-announcement-20250626/</guid>
-      <description>Studio N-Lite resmi mengumumkan film animasi original &lt;em&gt;Chiure: Child of the Sea&lt;/em&gt;, disutradarai dan ditulis oleh Daisuke Igarashi. Film dijadwalkan rilis di Jepang pada 2026, dengan teaser visual yang menampilkan nuansa surealis dan fantasi.</description>
+      <description>Studio N-Lite resmi mengumumkan film animasi original Chiure: Child of the Sea, disutradarai dan ditulis oleh Daisuke Igarashi. Dijadwalkan rilis pada 2026 di Jepang, film ini menampilkan teaser visual bernuansa surealis dan fantasi.</description>
     </item>
     <item>
       <title>Jujutsu Kaisen Season 3 Resmi Umumkan Arc Culling Game</title>
@@ -93,18 +93,18 @@
       <description>&lt;em&gt;Kotonoha no Niwa&lt;/em&gt; adalah film pendek karya Makoto Shinkai yang mengisahkan pertemuan tak terduga antara dua jiwa yang sama-sama kehilangan arah. Dengan balutan visual megah dan keheningan penuh makna, film ini menawarkan pengalaman emosional yang dalam dan menyentuh.</description>
     </item>
     <item>
-      <title>Review Zenshuu: Perjalanan Natsuko dalam Dunia Animasi, Takdir, dan Cinta Pertama</title>
+      <title>Ulasan Zenshuu: Perjalanan di Antara Imajinasi, Takdir, dan Cinta Pertama</title>
       <link>http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/</link>
       <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/</guid>
-      <description>Anime &lt;em&gt;Zenshuu&lt;/em&gt; menghadirkan kisah unik tentang Natsuko Hirose, seorang animator muda yang terjebak dalam dunia film favoritnya. Dengan visual memukau, musik yang menghidupkan suasana, dan kisah cinta pertama yang menggemaskan, serial ini berhasil menciptakan pengalaman yang emosional dan penuh kejutan.</description>
+      <description>Zenshuu adalah anime tentang seorang animator muda yang terjebak dalam dunia film buatannya sendiri. Dengan visual detail, musik yang mendukung suasana, dan kisah cinta pertama yang berkembang pelan, seri ini menghadirkan pengalaman menonton yang tenang dan emosional.</description>
     </item>
     <item>
-      <title>Dandadan Season 2 Siap Tayang 3 Juli 2025 dengan Trailer Baru dan Lagu Tema Resmi</title>
+      <title>Dandadan Season 2 Tayang 3 Juli 2025 dengan Trailer Baru dan Lagu Tema Resmi</title>
       <link>http://localhost:1313/posts/anime/dandadan-season-2-trailer-jadwal-20250601/</link>
       <pubDate>Sun, 01 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/anime/dandadan-season-2-trailer-jadwal-20250601/</guid>
-      <description>Anime &amp;lsquo;Dandadan&amp;rsquo; mengumumkan Season 2 tayang mulai 3 Juli 2025. Trailer terbaru menampilkan aksi intens, suasana absurd, dan lagu tema resmi dengan komentar penyanyi.</description>
+      <description>Anime Dandadan mengumumkan Season 2 tayang mulai 3 Juli 2025. Trailer terbaru menampilkan aksi intens, suasana absurd, dan lagu tema resmi dari Aina the End dan WurtS.</description>
     </item>
     <item>
       <title>Kaiju No. 8 Season 2 Ungkap Trailer Teaser dan Visual Gen Narumi</title>
@@ -125,7 +125,7 @@
       <link>http://localhost:1313/posts/anime/kagurabachi-anime-adaptation-20241202/</link>
       <pubDate>Tue, 03 Dec 2024 06:00:00 +0700</pubDate>
       <guid>http://localhost:1313/posts/anime/kagurabachi-anime-adaptation-20241202/</guid>
-      <description>CyberAgent dan Shochiku mengumumkan adaptasi anime dari &lt;em&gt;Kagurabachi&lt;/em&gt;, manga aksi populer karya Takeru Hokazono. Produksi oleh CygamesPictures dijadwalkan menghadirkan duel sihir dan balas dendam yang mendebarkan.</description>
+      <description>CyberAgent dan Shochiku mengumumkan adaptasi anime dari Kagurabachi, manga aksi populer karya Takeru Hokazono. Produksi oleh CygamesPictures dijadwalkan menghadirkan duel sihir dan balas dendam yang mendebarkan.</description>
     </item>
   </channel>
 </rss>

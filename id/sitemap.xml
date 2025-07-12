@@ -2,60 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/anime/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/anime/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/anime/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/anime/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/anime/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/anime-baru/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/anime-baru/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/anime-baru/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/anime-musim-mendatang/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/anime-musim-mendatang/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/anime-musim-mendatang/"
-                />
-  </url><url>
     <loc>http://localhost:1313/categories/berita/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -65,123 +13,6 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/categories/berita/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/boku-no-hero-academia/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/boku-no-hero-academia/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/boku-no-hero-academia/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/bones/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/bones/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/bones/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/crunchyroll/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/crunchyroll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/crunchyroll/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/tags/vigilantes/</loc>
-    <lastmod>2025-07-12T10:30:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/vigilantes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/vigilantes/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/byeon-woo-seok/</loc>
@@ -195,6 +26,32 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/byeon-woo-seok/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/film/</loc>
@@ -288,6 +145,19 @@
                 href="http://localhost:1313/posts/movies/solo-leveling-live-action-netflix-20250710/"
                 />
   </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/solo-leveling/</loc>
     <lastmod>2025-07-10T10:00:00+07:00</lastmod>
     <xhtml:link
@@ -299,6 +169,71 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/solo-leveling/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-10T10:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/categories/anime/</loc>
+    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/categories/anime/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/categories/anime/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/anime/</loc>
+    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/anime/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/anime/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/anime-baru/</loc>
+    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/anime-baru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/anime-baru/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/anime-musim-mendatang/</loc>
+    <lastmod>2025-07-07T20:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/anime-musim-mendatang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/anime-musim-mendatang/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/rooster-fighter/</loc>
@@ -384,7 +319,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707/"
+                href="http://localhost:1313/en/posts/anime/mushoku-tensei-season-3-teaser-pv-20250707-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -407,16 +342,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/anime-musim-panas/</loc>
     <lastmod>2025-07-01T22:20:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/anime-musim-panas/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/anime-musim-panas/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/cloverworks/</loc>
     <lastmod>2025-07-01T22:20:00+07:00</lastmod>
@@ -449,7 +374,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507/"
+                href="http://localhost:1313/en/posts/anime/kaoru-hana-wa-rin-to-saku-teaser-pv-visual-202507-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -485,16 +410,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/anime-summer-2025/</loc>
     <lastmod>2025-07-01T08:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/anime-summer-2025/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/anime-summer-2025/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/berita-anime/</loc>
     <lastmod>2025-07-01T08:00:00+07:00</lastmod>
@@ -540,7 +455,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/jigoku-sensei-nube-2025-trailer-jadwal-20250701/"
+                href="http://localhost:1313/en/posts/anime/jigoku-sensei-nube-2025-trailer-premiere-20250701/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -618,7 +533,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/kimetsu-no-yaiba-infinity-castle-film-trailer-20250630/"
+                href="http://localhost:1313/en/posts/anime/kimetsu-no-yaiba-infinity-castle-film-trailer-20250630-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -626,18 +541,73 @@
                 href="http://localhost:1313/posts/anime/kimetsu-no-yaiba-infinity-castle-film-trailer-20250630/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/anime-musim-panas-2025/</loc>
-    <lastmod>2025-06-30T09:00:00+07:00</lastmod>
+    <loc>http://localhost:1313/tags/boku-no-hero-academia/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/tags/anime-musim-panas-2025/"
+                href="http://localhost:1313/en/tags/boku-no-hero-academia/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="id-ID"
-                href="http://localhost:1313/tags/anime-musim-panas-2025/"
+                href="http://localhost:1313/tags/boku-no-hero-academia/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630-en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/anime/boku-no-hero-academia-vigilantes-season-2-20250630/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/bones/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/bones/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/bones/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/crunchyroll/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/crunchyroll/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/crunchyroll/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/vigilantes/</loc>
+    <lastmod>2025-06-30T10:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/vigilantes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/vigilantes/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/anime-musim-panas-2025/</loc>
+    <lastmod>2025-06-30T09:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dustcell/</loc>
     <lastmod>2025-06-30T09:00:00+07:00</lastmod>
@@ -670,7 +640,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/anime-gachiakuta-penayangan-global-lagu-tema-karakter-baru-20250630/"
+                href="http://localhost:1313/en/posts/anime/anime-gachiakuta-global-premiere-theme-songs-new-characters-20250630/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -693,16 +663,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/pemutaran-global/</loc>
     <lastmod>2025-06-30T09:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/pemutaran-global/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/pemutaran-global/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/hells-paradise/</loc>
     <lastmod>2025-06-30T08:00:00+07:00</lastmod>
@@ -717,19 +677,6 @@
                 href="http://localhost:1313/tags/hells-paradise/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/anime/hells-paradise-season-2-januari-2026-20250630/</loc>
-    <lastmod>2025-06-30T08:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/hells-paradise-season-2-januari-2026-20250630/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/anime/hells-paradise-season-2-januari-2026-20250630/"
-                />
-  </url><url>
     <loc>http://localhost:1313/tags/jigokuraku/</loc>
     <lastmod>2025-06-30T08:00:00+07:00</lastmod>
     <xhtml:link
@@ -741,6 +688,19 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/jigokuraku/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/anime/jigokuraku-season-2-januari-2026-20250630/</loc>
+    <lastmod>2025-06-30T08:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/anime/jigokuraku-season-2-january-2026-20250630-en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/anime/jigokuraku-season-2-januari-2026-20250630/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/mappa/</loc>
@@ -782,6 +742,19 @@
                 href="http://localhost:1313/tags/mamoru-hosoda/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/review/</loc>
+    <lastmod>2025-06-26T17:22:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/review/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/tags/review/"
+                />
+  </url><url>
     <loc>http://localhost:1313/posts/anime/review-belle-anime-20250611/</loc>
     <lastmod>2025-06-26T17:22:00+07:00</lastmod>
     <xhtml:link
@@ -820,9 +793,6 @@
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/studio-chizu/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/tags/ulasan/</loc>
-    <lastmod>2025-06-26T17:22:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/ulasan/</loc>
     <lastmod>2025-06-26T17:22:00+07:00</lastmod>
@@ -881,16 +851,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/film-animasi/</loc>
     <lastmod>2025-06-26T08:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/film-animasi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/film-animasi/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/n-lite/</loc>
     <lastmod>2025-06-26T08:00:00+07:00</lastmod>
@@ -910,7 +870,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/chiure-child-of-the-sea-announcement-20250626/"
+                href="http://localhost:1313/en/posts/anime/chiure-child-of-the-sea-announcement-20250626-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -920,16 +880,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/pengumuman/</loc>
     <lastmod>2025-06-26T08:00:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/pengumuman/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/pengumuman/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/culling-game/</loc>
     <lastmod>2025-06-24T08:00:00+07:00</lastmod>
@@ -975,7 +925,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/jujutsu-kaisen-season-3-culling-game-20250624/"
+                href="http://localhost:1313/en/posts/anime/jujutsu-kaisen-season-3-culling-game-20250624-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -1060,6 +1010,9 @@
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/romantis/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/tags/ulasan/</loc>
+    <lastmod>2025-06-17T17:53:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/event-696/</loc>
     <lastmod>2025-06-13T17:20:00+07:00</lastmod>
@@ -1232,29 +1185,6 @@
   </url><url>
     <loc>http://localhost:1313/tags/review-anime/</loc>
     <lastmod>2025-06-11T20:33:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/review-anime/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/tags/review-anime/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/</loc>
-    <lastmod>2025-06-11T20:33:00+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/review-zenshuu-anime-20250611/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="id-ID"
-                href="http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/romance/</loc>
     <lastmod>2025-06-11T20:33:00+07:00</lastmod>
@@ -1267,6 +1197,19 @@
                 rel="alternate"
                 hreflang="id-ID"
                 href="http://localhost:1313/tags/romance/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/</loc>
+    <lastmod>2025-06-11T20:33:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/anime/review-zenshuu-anime-20250611-en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="id-ID"
+                href="http://localhost:1313/posts/anime/review-zenshuu-anime-20250611/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/zenshuu/</loc>
@@ -2093,7 +2036,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/dandadan-season-2-trailer-jadwal-20250601/"
+                href="http://localhost:1313/en/posts/anime/dandadan-season-2-trailer-schedule-20250601-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -2314,7 +2257,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/kaiju-no-8-season-2-teaser-gen-narumi-20250324/"
+                href="http://localhost:1313/en/posts/anime/kaiju-no-8-season-2-teaser-gen-narumi-20250324-en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -2431,7 +2374,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/en/posts/anime/kagurabachi-anime-adaptation-20241202/"
+                href="http://localhost:1313/en/posts/anime/kagurabachi-anime-adaptation-20241202-en/"
                 />
     <xhtml:link
                 rel="alternate"

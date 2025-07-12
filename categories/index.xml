@@ -6,19 +6,12 @@
     <description>Recent content on CoNime</description>
     <generator>Hugo</generator>
     <language>id-ID</language>
-    <lastBuildDate>Sat, 12 Jul 2025 10:30:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jul 2025 10:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Anime</title>
-      <link>http://localhost:1313/categories/anime/</link>
-      <pubDate>Sat, 12 Jul 2025 10:30:00 +0700</pubDate>
-      <guid>http://localhost:1313/categories/anime/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Berita</title>
       <link>http://localhost:1313/categories/berita/</link>
-      <pubDate>Sat, 12 Jul 2025 10:30:00 +0700</pubDate>
+      <pubDate>Thu, 10 Jul 2025 10:00:00 +0700</pubDate>
       <guid>http://localhost:1313/categories/berita/</guid>
       <description></description>
     </item>
@@ -34,6 +27,13 @@
       <link>http://localhost:1313/categories/live-action/</link>
       <pubDate>Thu, 10 Jul 2025 10:00:00 +0700</pubDate>
       <guid>http://localhost:1313/categories/live-action/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anime</title>
+      <link>http://localhost:1313/categories/anime/</link>
+      <pubDate>Mon, 07 Jul 2025 20:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/categories/anime/</guid>
       <description></description>
     </item>
     <item>

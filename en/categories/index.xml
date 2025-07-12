@@ -39,7 +39,7 @@
     <item>
       <title>News</title>
       <link>http://localhost:1313/en/categories/news/</link>
-      <pubDate>Mon, 30 Jun 2025 10:30:00 +0700</pubDate>
+      <pubDate>Mon, 07 Jul 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/categories/news/</guid>
       <description></description>
     </item>
@@ -69,13 +69,6 @@
       <link>http://localhost:1313/en/categories/manga/</link>
       <pubDate>Thu, 05 Jun 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/en/categories/manga/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ulasan</title>
-      <link>http://localhost:1313/en/categories/ulasan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/categories/ulasan/</guid>
       <description></description>
     </item>
   </channel>

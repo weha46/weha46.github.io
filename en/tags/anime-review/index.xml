@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anime Review on CoNime</title>
+    <link>http://localhost:1313/en/tags/anime-review/</link>
+    <description>Recent content in Anime Review on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 11 Jun 2025 20:33:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/anime-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Review Zenshuu: A Journey Through Imagination, Fate, and First Love</title>
+      <link>http://localhost:1313/en/posts/anime/review-zenshuu-anime-20250611-en/</link>
+      <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/anime/review-zenshuu-anime-20250611-en/</guid>
+      <description>Zenshuu is an anime about a young animator who becomes trapped inside the world of her own film. With detailed visuals, atmospheric music, and a slowly blooming first love, it offers a calm and emotional viewing experience.</description>
+    </item>
+  </channel>
+</rss>
