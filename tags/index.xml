@@ -296,13 +296,6 @@
       <description></description>
     </item>
     <item>
-      <title>Review</title>
-      <link>http://localhost:1313/tags/review/</link>
-      <pubDate>Thu, 26 Jun 2025 17:22:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/review/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Soundtrack</title>
       <link>http://localhost:1313/tags/soundtrack/</link>
       <pubDate>Thu, 26 Jun 2025 17:22:00 +0700</pubDate>
@@ -314,6 +307,13 @@
       <link>http://localhost:1313/tags/studio-chizu/</link>
       <pubDate>Thu, 26 Jun 2025 17:22:00 +0700</pubDate>
       <guid>http://localhost:1313/tags/studio-chizu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ulasan</title>
+      <link>http://localhost:1313/tags/ulasan/</link>
+      <pubDate>Thu, 26 Jun 2025 17:22:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/ulasan/</guid>
       <description></description>
     </item>
     <item>
@@ -422,13 +422,6 @@
       <description></description>
     </item>
     <item>
-      <title>Ulasan</title>
-      <link>http://localhost:1313/tags/ulasan/</link>
-      <pubDate>Tue, 17 Jun 2025 17:53:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/ulasan/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Event 696</title>
       <link>http://localhost:1313/tags/event-696/</link>
       <pubDate>Fri, 13 Jun 2025 17:20:00 +0700</pubDate>
@@ -499,17 +492,17 @@
       <description></description>
     </item>
     <item>
-      <title>Review Anime</title>
-      <link>http://localhost:1313/tags/review-anime/</link>
-      <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/review-anime/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Romance</title>
       <link>http://localhost:1313/tags/romance/</link>
       <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
       <guid>http://localhost:1313/tags/romance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ulasan Anime</title>
+      <link>http://localhost:1313/tags/ulasan-anime/</link>
+      <pubDate>Wed, 11 Jun 2025 20:33:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/ulasan-anime/</guid>
       <description></description>
     </item>
     <item>

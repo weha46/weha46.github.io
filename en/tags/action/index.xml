@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Action on CoNime</title>
+    <link>http://localhost:1313/en/tags/action/</link>
+    <description>Recent content in Action on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 05 Jun 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/action/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chainsaw Man Volume 18 Releases on VIZ, Denji and Nayuta Face Threat from Chainsaw Man Church</title>
+      <link>http://localhost:1313/en/posts/comics/chainsaw-man-volume-18-release-viz-20250605-en/</link>
+      <pubDate>Thu, 05 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/comics/chainsaw-man-volume-18-release-viz-20250605-en/</guid>
+      <description>VIZ Media officially releases the 18th volume of &lt;em&gt;Chainsaw Man&lt;/em&gt;, featuring a new conflict between Denji, Nayuta, and the fanatic Chainsaw Man Church trying to control the world.</description>
+    </item>
+    <item>
+      <title>Kaiju No. 8 Volume 13 Released on VIZ, Kafka Faces a New Threat</title>
+      <link>http://localhost:1313/en/posts/comics/kaiju-no-8-volume-13-release-viz-20250604-en/</link>
+      <pubDate>Wed, 04 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/comics/kaiju-no-8-volume-13-release-viz-20250604-en/</guid>
+      <description>VIZ Media officially releases &lt;em&gt;Kaiju No. 8&lt;/em&gt; Volume 13, delivering intense action as Kafka faces a new threat from Kaiju No. 9 in Tachikawa City.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science on CoNime</title>
+    <link>http://localhost:1313/en/tags/science/</link>
+    <description>Recent content in Science on CoNime</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 04 Jun 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dr. Stone Volume 27 Released on VIZ, Senku and Team Begin Building a Time Machine</title>
+      <link>http://localhost:1313/en/posts/comics/dr-stone-volume-27-release-viz-20250604-en/</link>
+      <pubDate>Wed, 04 Jun 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/comics/dr-stone-volume-27-release-viz-20250604-en/</guid>
+      <description>VIZ Media officially releases &lt;em&gt;Dr. Stone&lt;/em&gt; Volume 27, introducing a new science adventure arc as Senku and his team attempt to build a time machine after receiving a mysterious message from the future.</description>
+    </item>
+  </channel>
+</rss>
